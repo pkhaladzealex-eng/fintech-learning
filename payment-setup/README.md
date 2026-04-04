@@ -26,25 +26,19 @@ In the first phase, I focused on setting up the environment and creating test cu
 In this phase, I executed 5 manual transactions to test how the system handles different payment outcomes.
 
 ### 1. Successful Payment ✅
-Verified the "Happy Path" where a standard transaction completes successfully.
-![Successful Payment](./payment-setup/1-successful-payment.png)
+![Successful Payment](1-successful-payment.png)
 
 ### 2. Declined Card ❌
-Simulated a generic bank decline to verify the system's rejection handling.
-![Declined Card](./payment-setup/2-declined-card.png)
+![Declined Card](2-declined-card.png)
 
 ### 3. Insufficient Funds 💸
-Verified the specific error message when a card has an inadequate balance.
-![Insufficient Funds](./payment-setup/3-insufficient-funds.png)
+![Insufficient Funds](3-insufficient-funds.png)
 
 ### 4. Expired Card 📅
-Tested the system's ability to validate and reject outdated card information.
-![Expired Card](./payment-setup/4-expired-card.png)
+![Expired Card](4-expired-card.png)
 
 ### 5. Network / Processing Error ⚠️
-Simulated a technical/processing failure to test system resilience.
-![Network Error](./payment-setup/5-network-error.png)
-
+![Network Error](5-network-error.png)
 ---
 
 ## 💡 Key Learning Outcomes
