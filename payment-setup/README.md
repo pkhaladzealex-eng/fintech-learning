@@ -62,4 +62,4 @@ I accessed the Stripe Workbench to review the webhook endpoints.
 ![Stripe Webhooks Setup](day3-stripe-webhooks.png)
 
 ### 3. Documentation
-Detailed explanation of webhooks can be found in `payment-setup/webhook_explanation.txt`.
+Detailed explanation of webhooks can be found in [webhook_explanation.txt](webhook_explanation.txt).
