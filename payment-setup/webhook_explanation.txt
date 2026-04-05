@@ -1,0 +1,11 @@
+What is a Webhook?
+A webhook is a way for an app to provide other applications with real-time information. Unlike a typical API where you must poll for data frequently to get it in real-time, a webhook delivers data to other applications as it happens, meaning you get data immediately. It is often referred to as a "Reverse API" or a "HTTP push."
+
+Why do payment systems (like Stripe) use them?
+Payment systems use webhooks to notify your backend server about events that happen in your account. They are crucial for:
+
+1. Automation: Automatically fulfilling an order or sending a confirmation email as soon as a payment is successful.
+
+2. Reliability: Ensuring the system stays in sync even if a user closes their browser or loses internet connection before the "Success" page loads.
+
+3. Handling Asynchronous Events: Managing events that don't happen instantly, such as a disputed charge (chargeback) or a recurring subscription payment.
