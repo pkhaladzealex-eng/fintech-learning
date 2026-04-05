@@ -46,3 +46,20 @@ In this phase, I executed 5 manual transactions to test how the system handles d
 * **Error Handling:** Understanding the importance of granular error messages (e.g., distinguishing a decline from an expiration).
 * **Transaction Lifecycle:** Tracking payments from `Pending` to `Succeeded` or `Failed` in the Dashboard.
 * **QA Documentation:** Implementing a structured approach to screenshot naming and Git-based reporting.
+
+
+## Day 3: Stripe Webhooks & Theory
+
+In this stage, I focused on understanding how Stripe communicates with our server using Webhooks.
+
+### 1. Technical Concept
+* **Webhook:** An automated message sent by Stripe when an event occurs (e.g., payment success).
+* **Purpose:** To keep our database in sync with real-time payment statuses.
+
+### 2. Implementation Workspace
+I accessed the Stripe Workbench to review the webhook endpoints.
+
+![Stripe Webhooks Setup](payment-setup/day3-stripe-webhooks.png)
+
+### 3. Documentation
+Detailed explanation of webhooks can be found in `payment-setup/webhook_explanation.txt`.
