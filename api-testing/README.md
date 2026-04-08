@@ -26,3 +26,30 @@ In this session, I handled the post-payment lifecycle by processing a refund and
 
 ### Key Takeaway:
 Successfully linked a refund to an existing charge and confirmed that Stripe correctly updates the transaction's lifecycle status to reflect the reversal of funds.
+
+---
+
+## Day 6: Stripe API Python Setup
+Transitioned from Postman to automation using the **Stripe Python SDK**.
+
+1. **Environment Configuration**: Set up secure API key management using environment variables.
+2. **Charge Creation**: Successfully automated a $25.00 payment via a Python script.
+
+### Files & Screenshots (Day 6):
+* [Python Code](./Day-06-Stripe-Charge-Creation-Basics/stripe_test.py)
+* ![Success Charge](./Day-06-Stripe-Charge-Creation-Basics/stripe_result.png)
+
+---
+
+## Day 7: Stripe API Error Handling
+Focused on system resilience and handling payment failures.
+
+1. **Simulated Failure**: Used `tok_chargeDeclined` to trigger an intentional card rejection.
+2. **Exception Handling**: Implemented `try-except` blocks to catch and display user-friendly error messages from Stripe's API.
+
+### Files & Screenshots (Day 7):
+* [Python Code](./Day-07-Stripe-API-Error-Handling/stripe_test.py)
+* ![Declined Error](./Day-07-Stripe-API-Error-Handling/day7_declined_error.png)
+
+### Key Takeaway:
+Learned that robust API integration isn't just about successful paths, but also about gracefully managing real-world scenarios like declined cards.
