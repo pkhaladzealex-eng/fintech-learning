@@ -36,7 +36,7 @@ Transitioned from Postman to automation using the **Stripe Python SDK**.
 2. **Charge Creation**: Successfully automated a $25.00 payment via a Python script.
 
 ### Files & Screenshots (Day 6):
-* [Python Code](./Day-06-Stripe-Charge-Creation-Basics/stripe_test.py)
+* [Python Code](./Day-06-Stripe-Charge-Creation-Basics/stripe_test_day6.py)
 * ![Success Charge](./Day-06-Stripe-Charge-Creation-Basics/day6_result.png)
 
 ---
@@ -48,7 +48,7 @@ Focused on system resilience and handling payment failures.
 2. **Exception Handling**: Implemented `try-except` blocks to catch and display user-friendly error messages from Stripe's API.
 
 ### Files & Screenshots (Day 7):
-* [Python Code](./Day-07-Stripe-API-Error-Handling/stripe_test.py)
+* [Python Code](./Day-07-Stripe-API-Error-Handling/stripe_test_day7.py)
 * ![Declined Error](./Day-07-Stripe-API-Error-Handling/day7_result.png)
 
 ### Key Takeaway:
