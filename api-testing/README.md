@@ -37,7 +37,7 @@ Transitioned from Postman to automation using the **Stripe Python SDK**.
 
 ### Files & Screenshots (Day 6):
 * [Python Code](./Day-06-Stripe-Charge-Creation-Basics/stripe_test.py)
-* ![Success Charge](./Day-06-Stripe-Charge-Creation-Basics/stripe_result.png)
+* ![Success Charge](./Day-06-Stripe-Charge-Creation-Basics/day6_result.png)
 
 ---
 
@@ -49,7 +49,7 @@ Focused on system resilience and handling payment failures.
 
 ### Files & Screenshots (Day 7):
 * [Python Code](./Day-07-Stripe-API-Error-Handling/stripe_test.py)
-* ![Declined Error](./Day-07-Stripe-API-Error-Handling/day7_declined_error.png)
+* ![Declined Error](./Day-07-Stripe-API-Error-Handling/day7_result.png)
 
 ### Key Takeaway:
 Learned that robust API integration isn't just about successful paths, but also about gracefully managing real-world scenarios like declined cards.
