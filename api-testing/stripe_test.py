@@ -4,21 +4,20 @@ import stripe
 stripe.api_key = os.getenv('STRIPE_TEST_KEY')
 
 if not stripe.api_key:
-    print("❌ Error: API key not found! Did you run 'export STRIPE_TEST_KEY=...'?")
+    print("❌ Error: API key not found!")
 else:
     try:
+        # tok_chargeDeclined
         charge = stripe.Charge.create(
             amount=2500,
             currency="usd",
-            source="tok_visa",
-            description="My first Python Stripe test"
+            source="tok_chargeDeclined",  # changed
+            description="Testing a declined card"
         )
+        print("✅ Success! (Wait, this should have failed...)")
 
-        print("\n✅ Success! Charge Created:")
-        print(f"ID:     {charge['id']}")
-        print(f"Amount: {charge['amount'] / 100} {charge['currency'].upper()}")
-        print(f"Status: {charge['status']}")
-
+    except stripe.error.CardError as e:
+        print(f"❌ Card Declined: {e.user_message}")
     except stripe.error.StripeError as e:
         print(f"❌ Stripe Error: {e.user_message}")
     except Exception as e:
