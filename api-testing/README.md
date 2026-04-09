@@ -64,3 +64,7 @@ Today I practiced handling successful and declined payments using the Stripe Cha
 
 ### Declined Payment (Error Handling)
 ![Error Screenshot](./Day-8-Repetition/practice_error.png)
+
+### Files:
+* [Success Case Code](./Day-8-Repetition/practice_success.py)
+* [Error Case Code](./Day-8-Repetition/practice_error.py)
