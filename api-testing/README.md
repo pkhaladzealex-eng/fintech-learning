@@ -53,3 +53,14 @@ Focused on system resilience and handling payment failures.
 
 ### Key Takeaway:
 Learned that robust API integration isn't just about successful paths, but also about gracefully managing real-world scenarios like declined cards.
+
+
+# Day 8: Stripe API Practice (Repetition)
+
+Today I practiced handling successful and declined payments using the Stripe Charge API.
+
+### Successful Payment
+![Success Screenshot](./Day-8-Repetition/practice_success.png)
+
+### Declined Payment (Error Handling)
+![Error Screenshot](./Day-8-Repetition/practice_error.png)
