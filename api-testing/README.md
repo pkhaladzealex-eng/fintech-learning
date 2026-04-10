@@ -67,3 +67,21 @@ Today I practiced handling successful and declined payments using the Stripe Cha
 * [Error Case Code](./Day-8-Repetition/practice_error.py)
 ![Error Screenshot](./Day-8-Repetition/practice_error.png)
 
+
+---
+## Day 9: Stripe Refund Automation
+
+### Overview
+In this exercise, I automated the process of creating a charge and then immediately issuing a refund using the Stripe Python API. This simulates a common fintech scenario where a transaction needs to be reversed.
+
+### Code Implementation
+The script performs the following:
+1. Connects to Stripe API using environment variables.
+2. Creates a charge of $50.00.
+3. Captures the Charge ID.
+4. Issues a full refund for that specific Charge ID.
+
+### Results
+Below is the terminal output showing the successful charge creation and the subsequent refund:
+* [Refund Script Code](./api-testing/Day-09-Stripe-Refund-Automation/stripe_refund.py)
+![Stripe Refund Test](api-testing/Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
