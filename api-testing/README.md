@@ -1,4 +1,4 @@
-# Stripe API Testing - Day 4
+	# Stripe API Testing - Day 4
 
 This folder contains API request tests performed using Postman.
 
@@ -81,7 +81,6 @@ The script performs the following:
 3. Captures the Charge ID.
 4. Issues a full refund for that specific Charge ID.
 
-### Results
-Below is the terminal output showing the successful charge creation and the subsequent refund:
-* [Refund Script Code](./api-testing/Day-09-Stripe-Refund-Automation/stripe_refund.py)
-![Stripe Refund Test](api-testing/Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
+### Implementation & Results
+* [Refund Script Code](./Day-09-Stripe-Refund-Automation/stripe_refund.py)
+![Refund Test Results](./Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
