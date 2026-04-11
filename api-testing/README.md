@@ -53,21 +53,22 @@ Focused on system resilience and handling payment failures.
 
 ### Key Takeaway:
 Learned that robust API integration isn't just about successful paths, but also about gracefully managing real-world scenarios like declined cards.
-
+---
 
 # Day 8: Stripe API Practice (Repetition)
 
 Today I practiced handling successful and declined payments using the Stripe Charge API.
 
 ### Successful Payment
-* [Success Case Code](./Day-8-Repetition/practice_success.py)
-![Success Screenshot](./Day-8-Repetition/practice_success.png)
+* [Success Case Code](./Day-08-Repetition/practice_success.py)
+![Success Screenshot](./Day-08-Repetition/practice_success.png)
 
 ### Declined Payment (Error Handling)
-* [Error Case Code](./Day-8-Repetition/practice_error.py)
-![Error Screenshot](./Day-8-Repetition/practice_error.png)
+* [Error Case Code](./Day-08-Repetition/practice_error.py)
+![Error Screenshot](./Day-08-Repetition/practice_error.png)
 
-
+# API Testing & Fintech Learning
+---
 ## Day 9: Stripe Refund Automation
 ### Overview
 Automated the process of creating a charge and immediately issuing a full refund using the Stripe API.
@@ -80,7 +81,7 @@ Automated the process of creating a charge and immediately issuing a full refund
 
 ## Day 10: SQL Database Setup
 ### Overview
-Created a local SQLite database to store and manage transaction data.
+Created a local SQLite database to store and manage transaction data. Defined a schema and populated it with test data.
 
 ### Implementation & Results
 * [SQL Database File](Day-10-SQL-Transactions/payments.db)
