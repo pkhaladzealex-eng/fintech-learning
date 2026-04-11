@@ -92,5 +92,5 @@ The script performs the following:
 Created a local SQLite database to simulate transaction logging. Defined a schema for storing payment details and populated it with test data.
 
 ### Implementation & Results
-* [SQL Setup Script](./Day-10-SQL-Transactions/test_transactions.sql)
+* [SQL Setup Script](./Day-10-SQL-Transactions/payments.db)
 ![SQL Test Results](./Day-10-SQL-Transactions/sql_test_results.png)
