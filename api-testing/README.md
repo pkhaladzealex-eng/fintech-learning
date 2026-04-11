@@ -84,3 +84,13 @@ The script performs the following:
 ### Implementation & Results
 * [Refund Script Code](./Day-09-Stripe-Refund-Automation/stripe_refund.py)
 ![Refund Test Results](./Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
+
+---
+## Day 10: SQL Database Setup
+
+### Overview
+Created a local SQLite database to simulate transaction logging. Defined a schema for storing payment details and populated it with test data.
+
+### Implementation & Results
+* [SQL Setup Script](./Day-10-SQL-Transactions/test_transactions.sql)
+![SQL Test Results](./Day-10-SQL-Transactions/sql_test_results.png)
