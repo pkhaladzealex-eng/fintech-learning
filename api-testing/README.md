@@ -68,31 +68,21 @@ Today I practiced handling successful and declined payments using the Stripe Cha
 ![Error Screenshot](./Day-8-Repetition/practice_error.png)
 
 
----
 ## Day 9: Stripe Refund Automation
-
 ### Overview
-In this exercise, I automated the process of creating a charge and then immediately issuing a refund using the Stripe Python API. This simulates a common fintech scenario where a transaction needs to be reversed.
-
-### Code Implementation
-The script performs the following:
-1. Connects to Stripe API using environment variables.
-2. Creates a charge of $50.00.
-3. Captures the Charge ID.
-4. Issues a full refund for that specific Charge ID.
+Automated the process of creating a charge and immediately issuing a full refund using the Stripe API.
 
 ### Implementation & Results
-* [Refund Script Code](./Day-09-Stripe-Refund-Automation/stripe_refund.py)
-![Refund Test Results](./Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
+* [Refund Script Code](Day-09-Stripe-Refund-Automation/stripe_refund.py)
+![Refund Test Results](Day-09-Stripe-Refund-Automation/terminal_refund_test_results.png)
 
 ---
-## Day 10: SQL Database Setup
 
+## Day 10: SQL Database Setup
 ### Overview
-Created a local SQLite database to simulate transaction logging. Defined a schema for storing payment details and populated it with test data.
+Created a local SQLite database to store and manage transaction data.
 
 ### Implementation & Results
-* [SQL Database File](./Day-10-SQL-Transactions/payments.db)
-* [SQL Setup Script](./Day-10-SQL-Transactions/test_transactions.sql)
-
-![SQL Test Results](./Day-10-SQL-Transactions/sql_test_results.png)
+* [SQL Database File](Day-10-SQL-Transactions/payments.db)
+* [SQL Setup Script](Day-10-SQL-Transactions/test_transactions.sql)
+![SQL Test Results](Day-10-SQL-Transactions/sql_test_results.png)
