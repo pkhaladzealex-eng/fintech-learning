@@ -87,3 +87,19 @@ Created a local SQLite database to store and manage transaction data. Defined a 
 * [SQL Database File](Day-10-SQL-Transactions/payments.db)
 * [SQL Setup Script](Day-10-SQL-Transactions/test_transactions.sql)
 ![SQL Test Results](Day-10-SQL-Transactions/sql_test_results.png)
+
+
+---
+
+## Day 11: Advanced SQL Queries
+### Overview
+Practiced data retrieval techniques using SQL. Performed filtering and aggregation on the transactions database.
+
+### Tasks Performed:
+1. **Fetch All Data**: Verified all records in the table.
+2. **Filtered Selection**: Selected transactions with a `succeeded` status.
+3. **Data Aggregation**: Calculated the total revenue using the `SUM()` function.
+
+### Implementation & Results
+* [SQL Queries File](./Day-11-SQL-Queries/queries.sql)
+![SQL Queries Results](./Day-11-SQL-Queries/sql_queries_results.png)
