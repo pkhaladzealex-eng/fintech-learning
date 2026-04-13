@@ -103,3 +103,22 @@ Practiced data retrieval techniques using SQL. Performed filtering and aggregati
 ### Implementation & Results
 * [SQL Queries File](./Day-11-SQL-Queries/queries.sql)
 ![SQL Queries Results](./Day-11-SQL-Queries/sql_queries_results.png)
+
+
+---
+
+## Day 12: Database Verification Script
+### Overview
+Developed a Python script to bridge the gap between backend logic and the database. The script automates data retrieval and performs calculations on transaction records.
+
+### Tasks Performed:
+1. **Database Connection**: Established a secure connection to the SQLite database using Python.
+2. **Data Extraction**: Executed SQL queries within the script to fetch all transaction details.
+3. **Automated Calculation**: Implemented logic to calculate the total amount paid across all records.
+
+### Implementation & Results
+* [Python Verification Script](./Day-12/verify_payment.py)
+![Payment Verification Results](./Day-12/payment_verification_output.png)
+
+### Key Takeaway:
+Practiced the "Code-to-Database" workflow, ensuring that data stored in SQL can be accurately processed and validated using Python logic.
