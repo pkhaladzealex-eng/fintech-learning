@@ -122,3 +122,21 @@ Developed a Python script to bridge the gap between backend logic and the databa
 
 ### Key Takeaway:
 Practiced the "Code-to-Database" workflow, ensuring that data stored in SQL can be accurately processed and validated using Python logic.
+
+
+---
+
+## Day 13: Reflections & Integration Summary
+### Overview
+Synthesized the knowledge gained from working with SQL and Python automation. Documented the key lessons on how these tools work together in a payment testing environment.
+
+### Key Learnings:
+1. **SQL for Payment Testing**: Learned to use SQL as a "truth checker" to verify transaction data (amount, currency, status) directly in the database.
+2. **Python-SQL Connection**: Mastered the "bridge" concept—using Python libraries and cursors to automate database tasks.
+3. **The "Connection Chain"**: Explored how real-time actions (like Stripe clicks) sync with backend databases.
+
+### Implementation & Results
+* [Detailed Learning Log](../payment-setup/learnings.md)
+
+### Key Takeaway:
+Understanding the flow from a user's action to a Python script and finally to a SQL database entry is crucial for full-stack payment testing.
