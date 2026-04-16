@@ -1,4 +1,4 @@
-# 💳 Stripe Payment Integration & Testing Project
+	# 💳 Stripe Payment Integration & Testing Project
 
 ## 🌟 Project Overview
 This project demonstrates a comprehensive QA testing process within the **Stripe Sandbox** environment. I have simulated real-world customer creation and transaction scenarios to verify system robustness and error handling.

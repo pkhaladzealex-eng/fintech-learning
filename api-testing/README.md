@@ -140,3 +140,19 @@ Synthesized the knowledge gained from working with SQL and Python automation. Do
 
 ### Key Takeaway:
 Understanding the flow from a user's action to a Python script and finally to a SQL database entry is crucial for full-stack payment testing.
+---
+
+## Day 14: Payment Flow Documentation
+### Overview
+Documented the end-to-end payment lifecycle, visualizing how a user action triggers an API process, updates the system's database, and is finally verified by a QA tester using SQL.
+
+### Tasks Performed:
+1. **Flow Visualization**: Created a **Mermaid Sequence Diagram** to map the interaction between the User, Stripe API, and the Database.
+2. **Architecture Mapping**: Detailed the step-by-step logic from the "Pay" button click to the SQL verification.
+3. **Verification Logic**: Documented the specific SQL query used to check the final state of a transaction in the database.
+
+### Implementation & Results:
+* [Detailed Payment Flow Documentation](../payment-setup/payment-flow.md)
+
+### Key Takeaway:
+Visualizing the flow helped bridge the gap between frontend actions and backend database updates. It clarified how Stripe Webhooks serve as the messenger that tells our database to update a record, which we then verify using SQL queries.
