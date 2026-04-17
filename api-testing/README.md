@@ -156,3 +156,20 @@ Documented the end-to-end payment lifecycle, visualizing how a user action trigg
 
 ### Key Takeaway:
 Visualizing the flow helped bridge the gap between frontend actions and backend database updates. It clarified how Stripe Webhooks serve as the messenger that tells our database to update a record, which we then verify using SQL queries.
+
+
+## Day 15: Stripe Webhook Verification via Postman
+### Overview
+Returned to Postman to trigger a real-time event and verify the system's external communication via Webhooks. This session focused on how an API request triggers an asynchronous notification (Webhook) in the Stripe ecosystem.
+
+### Tasks Performed:
+1. **API Request (Postman)**: Created a `POST` request to `/v1/charges` to simulate a $25.00 payment using Stripe's test environment.
+2. **Webhook Monitoring**: Accessed the Stripe Dashboard's Workbench to monitor incoming events triggered by the API call.
+3. **Event Validation**: Verified that the `charge.succeeded` event was correctly generated with the matching transaction details (amount, currency, and ID).
+
+### Implementation & Results:
+* [Day 15 Task Folder](./api-testing/Day_15_stripe_webhook_event/)
+![Stripe Webhook Event Result](./api-testing/Day_15_stripe_webhook_event/day15-stripe-webhook-event.png)
+
+### Key Takeaway:
+Confirmed the link between a manual API call (Postman) and the automatic notification system (Webhooks). This is a critical step in payment testing, as it ensures that the backend and third-party services stay in sync after a transaction is processed.
