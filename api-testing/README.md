@@ -168,8 +168,9 @@ Returned to Postman to trigger a real-time event and verify the system's externa
 3. **Event Validation**: Verified that the `charge.succeeded` event was correctly generated with the matching transaction details (amount, currency, and ID).
 
 ### Implementation & Results:
-* [Day 15 Task Folder](./api-testing/Day_15_stripe_webhook_event/)
-![Stripe Webhook Event Result](./api-testing/Day_15_stripe_webhook_event/day15-stripe-webhook-event.png)
+* [Day 15 Task Folder](./Day_15_stripe_webhook_event/)
+![Stripe Webhook Event Result](./Day_15_stripe_webhook_event/day15-stripe-webhook-event.png)
+
 
 ### Key Takeaway:
 Confirmed the link between a manual API call (Postman) and the automatic notification system (Webhooks). This is a critical step in payment testing, as it ensures that the backend and third-party services stay in sync after a transaction is processed.
