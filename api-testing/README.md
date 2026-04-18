@@ -188,7 +188,8 @@ Explored the theoretical and practical foundation of Webhooks. Created a Python-
 
 ### Implementation & Results:
 * [Day 16 Task Folder](./api-testing/Day_16_Webhook_Concept/)
-![Webhook Simulation Result](./api-testing/Day_16_Webhook_Concept/day16-webhook-concept.jpg)
+![Webhook Simulation Result](./api-testing/Day_16_Webhook_Concept/day16-webhook-concept.png
+)
 
 ### Key Takeaway:
-Learned that Webhooks act as "Messengers" (მაცნე) that notify our system automatically when an event occurs. Understanding the JSON payload structure is vital for QA testing to verify that the backend correctly processes these automated notifications.
+Learned that Webhooks act as "Messengers"  that notify our system automatically when an event occurs. Understanding the JSON payload structure is vital for QA testing to verify that the backend correctly processes these automated notifications.
