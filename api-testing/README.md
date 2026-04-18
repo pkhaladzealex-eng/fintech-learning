@@ -174,3 +174,21 @@ Returned to Postman to trigger a real-time event and verify the system's externa
 
 ### Key Takeaway:
 Confirmed the link between a manual API call (Postman) and the automatic notification system (Webhooks). This is a critical step in payment testing, as it ensures that the backend and third-party services stay in sync after a transaction is processed.
+
+---
+
+## Day 16: Webhook Concepts & Simulation
+### Overview
+Explored the theoretical and practical foundation of Webhooks. Created a Python-based simulation to understand how a system "listens" for asynchronous events from third-party services like Stripe.
+
+### Tasks Performed:
+1. **Conceptual Documentation**: Explained the "Push" mechanism of webhooks vs. the "Pull" mechanism of standard APIs via code comments.
+2. **Simulation Script**: Developed `webhook_listener.py` to simulate a server waiting for incoming event data.
+3. **Data Structure Mapping**: Defined a sample JSON payload representing a `charge.succeeded` event to visualize the data structure received by a webhook.
+
+### Implementation & Results:
+* [Day 16 Task Folder](./api-testing/Day_16_Webhook_Concept/)
+![Webhook Simulation Result](./api-testing/Day_16_Webhook_Concept/day16-webhook-concept.jpg)
+
+### Key Takeaway:
+Learned that Webhooks act as "Messengers" (მაცნე) that notify our system automatically when an event occurs. Understanding the JSON payload structure is vital for QA testing to verify that the backend correctly processes these automated notifications.
