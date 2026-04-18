@@ -171,7 +171,6 @@ Returned to Postman to trigger a real-time event and verify the system's externa
 * [Day 15 Task Folder](./Day_15_stripe_webhook_event/)
 ![Stripe Webhook Event Result](./Day_15_stripe_webhook_event/day15-stripe-webhook-event.png)
 
-
 ### Key Takeaway:
 Confirmed the link between a manual API call (Postman) and the automatic notification system (Webhooks). This is a critical step in payment testing, as it ensures that the backend and third-party services stay in sync after a transaction is processed.
 
@@ -188,7 +187,7 @@ Explored the theoretical and practical foundation of Webhooks. Created a Python-
 
 ### Implementation & Results:
 * [Day 16 Task Folder](./Day_16_Webhook_Concept/)
-![Webhook Simulation Result](./Day_16_Webhook_Concept/day16-webhook-concept.jpg)
+![Webhook Simulation Result](./Day_16_Webhook_Concept/day16-webhook-concept.png)
 
 ### Key Takeaway:
 Learned that Webhooks act as "Messengers"  that notify our system automatically when an event occurs. Understanding the JSON payload structure is vital for QA testing to verify that the backend correctly processes these automated notifications.
