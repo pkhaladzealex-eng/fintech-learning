@@ -187,9 +187,8 @@ Explored the theoretical and practical foundation of Webhooks. Created a Python-
 3. **Data Structure Mapping**: Defined a sample JSON payload representing a `charge.succeeded` event to visualize the data structure received by a webhook.
 
 ### Implementation & Results:
-* [Day 16 Task Folder](./api-testing/Day_16_Webhook_Concept/)
-![Webhook Simulation Result](./api-testing/Day_16_Webhook_Concept/day16-webhook-concept.png
-)
+* [Day 16 Task Folder](./Day_16_Webhook_Concept/)
+![Webhook Simulation Result](./Day_16_Webhook_Concept/day16-webhook-concept.jpg)
 
 ### Key Takeaway:
 Learned that Webhooks act as "Messengers"  that notify our system automatically when an event occurs. Understanding the JSON payload structure is vital for QA testing to verify that the backend correctly processes these automated notifications.
