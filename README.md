@@ -55,7 +55,7 @@ I accessed the Stripe Workbench to review the webhook endpoints.
 ![Stripe Webhooks Setup](./payment-setup/Day-03/day3-stripe-webhooks.png)
 
 ### 3. Documentation
-Detailed explanation of webhooks can be found in [webhook_explanation.txt](webhook_explanation.txt).	
+Detailed explanation of webhooks can be found in [webhook_explanation.txt](./payment-setup/Day-03/webhook_explanation.txt).	
 
 
 # Stripe API Testing - Day 4
@@ -196,7 +196,7 @@ Synthesized the knowledge gained from working with SQL and Python automation. Do
 3. **The "Connection Chain"**: Explored how real-time actions (like Stripe clicks) sync with backend databases.
 
 ### Implementation & Results
-* [Detailed Learning Log](../payment-setup/Day-13/learnings.md)
+* [Detailed Learning Log](./payment-setup/Day-13/learnings.md)
 
 ### Key Takeaway:
 Understanding the flow from a user's action to a Python script and finally to a SQL database entry is crucial for full-stack payment testing.
@@ -212,7 +212,7 @@ Documented the end-to-end payment lifecycle, visualizing how a user action trigg
 3. **Verification Logic**: Documented the specific SQL query used to check the final state of a transaction in the database.
 
 ### Implementation & Results:
-* [Detailed Payment Flow Documentation](../payment-setup/Day-14/payment-flow.md)
+* [Detailed Payment Flow Documentation](./payment-setup/Day-14/payment-flow.md)
 
 ### Key Takeaway:
 Visualizing the flow helped bridge the gap between frontend actions and backend database updates. It clarified how Stripe Webhooks serve as the messenger that tells our database to update a record, which we then verify using SQL queries.
@@ -277,18 +277,18 @@ Learned that Webhooks act as "Messengers"  that notify our system automatically 
 * Understanding **Mocking** to test APIs without needing a real connection every time.
 
 
-##Day 18: SQL Database Infrastructure & QA Queries
-Overview
+---
+
+## Day 18: SQL Database Infrastructure & QA Queries
+
+### Overview
 Transitioned to hands-on SQL database management using the terminal (SQLite). Focused on data integrity, schema constraints, and professional QA reporting via localized queries.
 
-Tasks Performed:
-Database Creation: Initialized the fintech_qa.db database file directly via the command line.
+### Tasks Performed:
+1. **Database Creation**: Initialized the `fintech_qa.db` database file directly via the command line.
+2. **Schema Design**: Built a `customers` table with a `CHECK` constraint to ensure only valid payment methods (Visa, Mastercard, Amex) are accepted.
+3. **Data Ingestion**: Populated the database with test customer records to simulate a real fintech user base.
+4. **QA Reporting**: Executed specialized SQL queries to filter by card type, perform counts, and sort financial data for analysis.
 
-Schema Design: Built a customers table with a CHECK constraint to ensure only valid payment methods (Visa, Mastercard, Amex) are accepted.
-
-Data Ingestion: Populated the database with test customer records to simulate a real fintech user base.
-
-QA Reporting: Executed specialized SQL queries to filter by card type, perform counts, and sort financial data for analysis.
-
-Implementation & Results:
+### Implementation & Results:
 ![SQL Query Results](./payment-setup/Day-18-sql/sql_customer_queries.png)
