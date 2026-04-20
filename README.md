@@ -145,8 +145,8 @@ Created a local SQLite database to store and manage transaction data. Defined a 
 
 ### Implementation & Results
 * [SQL Database File](./api-testing/Day-10-SQL-Transactions/payments.db)
-* [SQL Setup Script](./api-testing.Day-10-SQL-Transactions/test_transactions.sql)
-![SQL Test Results](./api-testing.Day-10-SQL-Transactions/sql_test_results.png)
+* [SQL Setup Script](./api-testing/Day-10-SQL-Transactions/test_transactions.sql)
+![SQL Test Results](./api-testing/Day-10-SQL-Transactions/sql_test_results.png)
 
 
 ---
