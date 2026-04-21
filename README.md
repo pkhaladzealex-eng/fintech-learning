@@ -292,3 +292,22 @@ Transitioned to hands-on SQL database management using the terminal (SQLite). Fo
 
 ### Implementation & Results:
 ![SQL Query Results](./payment-setup/Day-18-sql/sql_customer_queries.png)
+
+
+---
+
+## Day 19: Python & SQL Integration (Data Analysis)
+### Overview
+Automated the data retrieval process by connecting a Python script to the existing SQLite database. This mimics a real QA scenario where backend data needs to be validated through code.
+
+### Tasks Performed:
+1. **Database Bridge**: Created a connection between Python and the `fintech_qa.db` stored in the payment infrastructure folder.
+2. **Dynamic Querying**: Developed a script to extract customer names and payment methods automatically.
+3. **Data Verification**: Implemented automated counting of database records to ensure data consistency.
+
+### Implementation & Results:
+* [Python Script](./api-testing/Day_19_Python_SQL_Analysis/customer_query.py)
+![Python SQL Analysis Result](./api-testing/Day_19_Python_SQL_Analysis/day19-python-sql-output.png)
+
+### Key Takeaway:
+Learned how to use Python to interact with raw SQL data. This is crucial for automated regression testing, where we need to verify that a transaction was correctly recorded without manual DB checks.
