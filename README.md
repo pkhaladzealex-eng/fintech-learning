@@ -311,3 +311,19 @@ Automated the data retrieval process by connecting a Python script to the existi
 
 ### Key Takeaway:
 Learned how to use Python to interact with raw SQL data. This is crucial for automated regression testing, where we need to verify that a transaction was correctly recorded without manual DB checks.
+---
+
+## Day 20: Payment System Quality Assurance (QA)
+### Overview
+Shifted focus from technical implementation to structured testing documentation. Developed a comprehensive test suite to ensure the reliability and security of the Stripe payment integration.
+
+### Tasks Performed:
+1. **Test Case Design**: Authored 10 detailed manual test cases covering Positive (Success), Negative (Declined), and Edge cases.
+2. **Error Handling Validation**: Defined scenarios for insufficient funds, expired cards, and incorrect CVC codes.
+3. **Backend & Data Integrity**: Included test cases for Webhook verification and Database synchronization checks.
+
+### Implementation & Results:
+* [Manual Test Case Document](./payment-setup/Day_20_Payment_Validation_Documentation/payment_test_cases.md)
+
+### Key Takeaway:
+Quality is not just about writing code; it's about anticipating failure points. Today's task reinforced the importance of systematic documentation in the software development lifecycle (SDLC).
