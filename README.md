@@ -341,3 +341,8 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Goal:** Create Stripe payments via Python API and verify data integrity in SQLite.
 - **Key Deliverables:** [View Day 22 Folder & Report](./api-testing/Day_22_API_Testing/)
 - **Status:** Completed ✅
+
+### 📅 Day 23: API Retrieval
+* **Goal:** Automate fetching charge details using an ID stored in a text file.
+- **Key Deliverables:** [View Day 23 Folder](./api-testing/Day_23_API_Retrieval/)
+- **Status:** Completed ✅
