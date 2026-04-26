@@ -346,3 +346,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Goal:** Automate fetching charge details using an ID stored in a text file.
 - **Key Deliverables:** [View Day 23 Folder](./api-testing/Day_23_API_Retrieval/)
 - **Status:** Completed ✅
+### 📅 Day 24: Error Handling
+* **Goal:** Use try-except blocks to catch and verify Stripe API payment failures.
+- **Key Deliverables:** [View Day 24 Folder](./api-testing/Day_24_Error_Handling/)
+- **Status:** Completed ✅
