@@ -350,3 +350,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Goal:** Use try-except blocks to catch and verify Stripe API payment failures.
 - **Key Deliverables:** [View Day 24 Folder](./api-testing/Day_24_Error_Handling/)
 - **Status:** Completed ✅
+### 📅 Day 25: Data Extraction
+* **Goal:** Extract and format specific fields from API response objects.
+- **Key Deliverables:** [View Day 25 Folder](./api-testing/Day_25_Data_Extraction/)
+- **Status:** Completed ✅
