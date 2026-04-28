@@ -354,3 +354,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Goal:** Extract and format specific fields from API response objects.
 - **Key Deliverables:** [View Day 25 Folder](./api-testing/Day_25_Data_Extraction/)
 - **Status:** Completed ✅
+### 📅 Day 26: Refund Logic
+* **Goal:** Automate payment reversals and handle different Stripe object types.
+- **Key Deliverables:** [View Day 26 Folder](./api-testing/Day_26_Refunds/)
+- **Status:** Completed ✅
