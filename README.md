@@ -358,3 +358,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Goal:** Automate payment reversals and handle different Stripe object types.
 - **Key Deliverables:** [View Day 26 Folder](./api-testing/Day_26_Refunds/)
 - **Status:** Completed ✅
+### 📅 Day 27: SQL & Data Aggregation
+* **Goal:** Integrate Python with SQLite to manage and calculate payment data.
+- **Key Deliverables:** [View Day 27 Folder](./api-testing/Day_27_SQL_Integration/)
+- **Status:** Completed ✅
