@@ -22,6 +22,7 @@ In the first phase, I focused on setting up the environment and creating test cu
 
 ---
 
+
 📅 Day 2: Transaction Outcome Testing
 In this phase, I executed 5 manual transactions to test how the system handles different payment outcomes.
 
@@ -361,4 +362,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 ### 📅 Day 27: SQL & Data Aggregation
 * **Goal:** Integrate Python with SQLite to manage and calculate payment data.
 - **Key Deliverables:** [View Day 27 Folder](./api-testing/Day_27_SQL_Integration/)
+- **Status:** Completed ✅
+
+### 📅 Day 28: Webhooks & Event Integration
+* **Goal:** Understand and configure Stripe Webhooks for real-time payment notifications.
+* **Key Achievements:**
+    - Configured a Webhook endpoint in Stripe Dashboard for `charge.succeeded` and `charge.failed` events.
+    - Analyzed the JSON payload structure that Stripe sends to the server.
+    - Developed a Python script to simulate and display sample Webhook data for testing.
+* **Concepts Learned:** Push vs. Pull communication, Webhook Endpoints, Event Objects.
+* **Deliverables:** [View Day 28 Folder](./api-testing/Day_28_Webhooks/)
 - **Status:** Completed ✅
