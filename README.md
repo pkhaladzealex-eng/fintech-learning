@@ -373,3 +373,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Concepts Learned:** Push vs. Pull communication, Webhook Endpoints, Event Objects.
 * **Deliverables:** [View Day 28 Folder](./api-testing/Day_28_Webhooks/)
 - **Status:** Completed ✅
+### 📅 Day 29: Parsing Real Webhook Data
+* **Goal:** Extract and process financial data from a live Stripe Webhook JSON payload.
+* **Key Achievements:**
+    - Automated a $60.00 test charge using `stripe6.py` to trigger a real event.
+    - Captured and analyzed a raw `charge.succeeded` JSON payload from the Stripe Dashboard.
+    - Developed `day29.py` to parse complex JSON structures and extract specific business data.
+    - Successfully mapped Unix timestamps and converted currency from cents to dollars in Python.
+* **Concepts Learned:** JSON Hierarchy, Python Dictionary Mapping, Data Type Conversion (`json.loads`).
+* **Deliverables:** [View Day 29 Folder](./api-testing/Day_29/)
+- **Status:** Completed ✅
