@@ -3,36 +3,27 @@
 ## 📂 List of Key Files Created
 
 ### 1. Payment Setup & Manual Testing
-- `payment-setup/Day-02/`: Screenshots of manual transaction outcomes.
-- `payment-setup/Day-03/webhook_explanation.txt`: Technical concept of webhooks.
-- `payment-setup/Day-14/payment-flow.md`: Mermaid sequence diagrams.
-- `payment-setup/Day_20_Payment_Validation_Documentation/payment_test_cases.md`: 10 manual test cases.
+- [**Screenshots of Manual Transaction Outcomes**](./payment-setup/Day-02/) - Evidence of successful and failed payments.
+- [**Webhook Technical Concept**](./payment-setup/Day-03/webhook_explanation.txt) - Theoretical breakdown of Stripe events.
+- [**Payment Flow Diagram**](./payment-setup/Day-14/payment-flow.md) - Mermaid sequence mapping of the system architecture.
+- [**Manual Test Cases**](./payment-setup/Day_20_Payment_Validation_Documentation/payment_test_cases.md) - 10 detailed test scenarios for Fintech QA.
+- [**Real-World Test Report**](./payment-setup/Day_21_Test_Execution_Results/test-execution-day21.md) - Formal execution log and evidence.
 
 ### 2. API Testing & Automation (Python)
-- `api-testing/Day-06/stripe_test_day6.py`: Basic charge automation.
-- `api-testing/Day-07/stripe_test_day7.py`: Exception handling and error messages.
-- `api-testing/Day-09/stripe_refund.py`: Automated refund logic.
-- `api-testing/Day_16_Webhook_Concept/webhook_listener.py`: Webhook simulation.
-- `api-testing/Day_23_API_Retrieval/`: Automated charge retrieval using IDs.
-- `api-testing/Day_29/day29.py`: Parsing real-time JSON payloads from Stripe.
+- [**Basic Charge Automation**](./api-testing/Day-06-Stripe-Charge-Creation-Basics/stripe_test_day6.py) - First successful API payment script.
+- [**Error Handling Script**](./api-testing/Day-07-Stripe-API-Error-Handling/stripe_test_day7.py) - Managing declined cards and API exceptions.
+- [**Automated Refund Logic**](./api-testing/Day-09-Stripe-Refund-Automation/stripe_refund.py) - Reversing transactions via code.
+- [**Webhook Simulation**](./api-testing/Day_16_Webhook_Concept/webhook_listener.py) - Mock server listening for events.
+- [**Advanced Data Extraction**](./api-testing/Day_25_Data_Extraction/) - Formatting specific fields from response objects.
+- [**Live Webhook Parser**](./api-testing/Day_29/day29.py) - Processing real-time JSON payloads from Stripe.
 
 ### 3. Database Management (SQL)
-- `api-testing/Day-10-SQL-Transactions/payments.db`: SQLite database file.
-- `api-testing/Day-10-SQL-Transactions/test_transactions.sql`: Initial schema and data ingestion.
-- `api-testing/Day-11-SQL-Queries/queries.sql`: Aggregation and filtering queries.
-- `api-testing/Day_19_Python_SQL_Analysis/customer_query.py`: Python-to-SQL bridge script.
+- [**Initial SQL Schema**](./api-testing/Day-10-SQL-Transactions/test_transactions.sql) - Database structure and data ingestion.
+- [**Advanced QA Queries**](./api-testing/Day-11-SQL-Queries/queries.sql) - Aggregation, filtering, and data integrity checks.
+- [**Python-to-SQL Bridge**](./api-testing/Day_19_Python_SQL_Analysis/customer_query.py) - Automating DB validation through Python.
+- [**Data Aggregation Integration**](./api-testing/Day_27_SQL_Integration/) - Managing payment data via Python and SQLite.
 
-### 4. Advanced API Logic & Error Handling
-- `api-testing/Day_24_Error_Handling/`: Catching and verifying Stripe API failures.
-- `api-testing/Day_25_Data_Extraction/`: Formatting specific fields from response objects.
-- `api-testing/Day_26_Refunds/`: Automating payment reversals.
-- `api-testing/Day_27_SQL_Integration/`: Aggregating payment data via Python and SQLite.
-
-### 5. Documentation & Reports
-- `README.md`: The main entry point and project overview.
-- `payment-setup/Day_21_Test_Execution_Results/test-execution-day21.md`: Real-world test report.
-
-
+---
 
 ## 📝 Final Reflection: My 30-Day Journey
 
@@ -47,9 +38,6 @@ This 30-day challenge was my first true immersion into a professional-grade tech
 I completed this journey with the support of AI, which allowed me to focus on the **macro-logic and architectural flow** rather than getting stuck on syntax. While I can read and explain every line of the Python code we built, writing complex automation scripts from scratch remains my biggest challenge. 
 
 However, I believe that understanding the *why* and *how* of the system is the most critical first step. The "muscle memory" developed through 30 days of consistent commits has laid a solid foundation.
-
-### What's Next?
-As a beginner, my goal is to transition from understanding the "big picture" to mastering the finer details of Python automation. I want to refine my skills within the overall workflow we've established. While I am still discovering which specific tools I need next, I am ready to deepen my technical expertise to match my logical understanding of the QA process.
 
 ### 🚀 What I'm Ready to Learn Next
 My immediate focus for the next 6 months is to transition into a professional **Automation QA role**. To achieve this, I will:
