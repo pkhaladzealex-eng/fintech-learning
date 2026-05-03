@@ -383,3 +383,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Concepts Learned:** JSON Hierarchy, Python Dictionary Mapping, Data Type Conversion (`json.loads`).
 * **Deliverables:** [View Day 29 Folder](./api-testing/Day_29/)
 - **Status:** Completed ✅
+---
+
+## 📅 Day 31: Advanced Charge Retrieval
+* **Goal:** Use the Stripe API to fetch specific transaction details and extract them into a clean Python structure.
+* **Key Achievements:**
+    - Successfully used `stripe.Charge.retrieve()` with a live Charge ID.
+    - Implemented a Python Dictionary to map and format API response data.
+    - Converted Unix timestamps and handled currency formatting for end-user readability.
+* **Deliverables:** [View Day 31 Folder](./api-testing/Day_31/)
+- **Status:** Completed ✅
