@@ -393,3 +393,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Converted Unix timestamps and handled currency formatting for end-user readability.
 * **Deliverables:** [View Day 31 Folder](./api-testing/Day_31/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 32: SQL Automation & Data Aggregation
+* **Goal:** Bridge the API data from Day 31 with a local SQLite database and perform automated calculations.
+* **Key Achievements:**
+    - Developed a Python script to automate SQL `INSERT` and `SELECT` operations.
+    - Used `executemany()` for efficient bulk data handling.
+    - Automated financial reporting by calculating total transaction amounts from the DB.
+* **Deliverables:** [View Day 32 Folder](./api-testing/Day_32/)
+- **Status:** Completed ✅
