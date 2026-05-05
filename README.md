@@ -404,3 +404,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated financial reporting by calculating total transaction amounts from the DB.
 * **Deliverables:** [View Day 32 Folder](./api-testing/Day_32/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 33: Stripe API & SQL Analytics
+* **Goal:** Integrate live Stripe data with SQLite and calculate financial metrics.
+* **Key Achievements:**
+    - Successfully synced live Stripe charges with the local database.
+    - Implemented SQL-based analytics for Total and Average transaction amounts.
+* **Deliverables:** [View Day 33 Folder](./api-testing/Day_33/)
+- **Status:** Completed ✅

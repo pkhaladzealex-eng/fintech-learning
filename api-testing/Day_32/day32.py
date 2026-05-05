@@ -20,18 +20,21 @@ def run_task():
         conn.commit()
 
         # 4. Query and Print
+
+        # Query all charges
         cursor.execute("SELECT * FROM charges")
         rows = cursor.fetchall()
 
         print("--- DATABASE CONTENT ---")
-        total = 0
         for row in rows:
             print(f"ID: {row[0]} | Amount: {row[1]} | Status: {row[2]} | Date: {row[3]}")
-            total += row[1]
+
+        # SQL Aggregation
+        cursor.execute("SELECT SUM(amount) FROM charges")
+        total_from_db = cursor.fetchone()[0]
 
         print("-" * 30)
-        print(f"TOTAL CALCULATED: {total} USD")
-
+        print(f"TOTAL CALCULATED BY SQL: {total_from_db} USD")
     except sqlite3.Error as e:
         print(f"Error: {e}")
     finally:
