@@ -414,3 +414,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented SQL-based analytics for Total and Average transaction amounts.
 * **Deliverables:** [View Day 33 Folder](./api-testing/Day_33/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 34: Error Handling & DB Statistics
+* **Goal:** Capture failed API calls and automate failure reporting in the database.
+* **Key Achievements:**
+    - Automated the capture of Stripe CardErrors.
+    - Implemented SQL logic to compare successful vs failed transaction counts.
+* **Deliverables:** [View Day 34 Folder](./api-testing/Day_34/)
+- **Status:** Completed ✅
