@@ -424,3 +424,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented SQL logic to compare successful vs failed transaction counts.
 * **Deliverables:** [View Day 34 Folder](./api-testing/Day_34/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 35: Multi-table Integration (Refunds)
+* **Goal:** Extend the system to track and aggregate refund data via Stripe API.
+* **Key Achievements:**
+    - Designed and implemented the `refunds` database table.
+    - Successfully linked Stripe refund objects to the local audit trail.
+* **Deliverables:** [View Day 35 Folder](./api-testing/Day_35/)
+- **Status:** Completed ✅
