@@ -1,8 +1,8 @@
 import stripe
 import os
 import sqlite3
-try:
 
+try:
     stripe.api_key = os.environ.get('STRIPE_API_KEY')
     conn = None
     refund_id_to_fetch = "re_3TUX2FJP62O0ob1e1BEnijMc"
@@ -14,25 +14,28 @@ try:
     cursor.execute("""CREATE TABLE IF NOT EXISTS refunds (
     refund_id TEXT PRIMARY KEY,
     charge_id TEXT,
-
     amount INTEGER NOT NULL,
     status TEXT
     )""")
     conn.commit()
 
+
     formated_data = [(refund_obj.id, refund_obj.charge, refund_obj.amount, refund_obj.status)]
-    cursor.executemany("INSERT INTO refunds (refund_id, charge_id, amount, status) VALUES (?,?,?,?)", formated_data)
+    cursor.execute("INSERT OR IGNORE INTO refunds (refund_id, charge_id, amount, status) VALUES (?,?,?,?)",
+                   formated_data[0])
     conn.commit()
 
     cursor.execute("SELECT * FROM refunds")
     rows = cursor.fetchall()
+
+    print("\n--- REFUND RECORDS ---")
     for row in rows:
-        print(f'Refund ID : [{row[0]}], Charge : [{row[1]}], Amount : [{row[2]}], Status : [{row[3]}]')
 
-    cursor.execute("SELECT  SUM(amount) FROM refunds")
+        print(f'Refund ID : [{row[0]}], Charge : [{row[1]}], Amount : [{row[2] / 100: .2f}] USD, Status : [{row[3]}]')
+
+    cursor.execute("SELECT SUM(amount) FROM refunds")
     totalAmount = cursor.fetchone()[0] or 0
-    print(f'Total Amount : [{totalAmount / 100}] USD')
-
+    print(f'\nTotal Amount Refunded : [{totalAmount / 100: .2f}] USD')
 except stripe.error.StripeError as e:
     print(f"Stripe API Error: {e}")
 except sqlite3.Error as e:
@@ -40,8 +43,5 @@ except sqlite3.Error as e:
 except Exception as e:
     print(f"Unexpected Error: {e}")
 finally:
-    if 'conn' in locals():
+    if conn:
         conn.close()
-
-
-
