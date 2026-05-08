@@ -434,3 +434,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully linked Stripe refund objects to the local audit trail.
 * **Deliverables:** [View Day 35 Folder](./api-testing/Day_35/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 36: Webhook Payloads & JSON Data Extraction
+* **Goal:** Practice real-time event simulation by parsing Stripe Webhook JSON data.
+* **Key Achievements:**
+    - Analyzed the structure of Stripe's `charge.succeeded` event payload.
+    - Automated the extraction and formatting of nested JSON fields.
+    - Implemented UNIX-to-Human date conversion for better readability.
+* **Deliverables:** [View Day 36 Folder](./api-testing/Day_36/)
+- **Status:** Completed ✅
