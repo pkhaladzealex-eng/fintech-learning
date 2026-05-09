@@ -11,13 +11,13 @@ The goal was to link charges and their corresponding refunds in the database to 
 
 ## Visual Documentation
 ### 1. Stripe Dashboard: Successful Charge
-![Stripe Success](./Succeeded.jpg)
+![Stripe Success](./stripe-charge-success.jpg)
 
 ### 2. Stripe Dashboard: Processed Refund
-![Stripe Refund](./Refunded.jpg)
+![Stripe Refund](./stripe-refund-processed.jpg)
 
 ### 3. Automated Financial Report (Python Output):
-![Financial Report](./day37-financial-report.png)
+![Financial Report](./terminal-financial-report.png)
 
 ## Key Learning
 I learned how to use relational database logic to bridge separate API objects. Calculating the Net Revenue automatically ensures data integrity for financial reporting.
