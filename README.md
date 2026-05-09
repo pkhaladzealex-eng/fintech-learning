@@ -445,3 +445,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented UNIX-to-Human date conversion for better readability.
 * **Deliverables:** [View Day 36 Folder](./api-testing/Day_36/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 37: Relational Data & Net Revenue Calculation
+* **Goal:** Reconcile charges and refunds using SQL Joins and API data.
+* **Key Achievements:**
+    - Implemented a relational database structure for charges and refunds.
+    - Automated the "Net Revenue" calculation logic in Python.
+* **Deliverables:** [View Day 37 Folder](./api-testing/Day_37/)
+- **Status:** Completed ✅
