@@ -11,7 +11,7 @@ The goal was to link charges and their corresponding refunds in the database to 
 
 ## Visual Documentation
 ### 1. Stripe Dashboard: Successful Charge
-![Stripe Success](./Suceeded.jpg)
+![Stripe Success](./Succeeded.jpg)
 
 ### 2. Stripe Dashboard: Processed Refund
 ![Stripe Refund](./Refunded.jpg)
