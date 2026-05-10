@@ -455,3 +455,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated the "Net Revenue" calculation logic in Python.
 * **Deliverables:** [View Day 37 Folder](./api-testing/Day_37/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 38: Advanced Joins & Net Revenue Auditing
+* **Goal:** Use `LEFT JOIN` to identify charges without refunds and calculate total platform revenue.
+* **Key Achievements:**
+    - Handled `NULL` values in SQL using `IFNULL` for accurate math.
+    - Generated a summary report showing $350.00 Total Net Revenue.
+* **Deliverables:** [View Day 38 Folder](./api-testing/Day_38/)
+- **Status:** Completed ✅
