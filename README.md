@@ -465,3 +465,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Generated a summary report showing $350.00 Total Net Revenue.
 * **Deliverables:** [View Day 38 Folder](./api-testing/Day_38/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 39: Secure API Integration
+* **Goal:** Implement secure API key handling and automate test charge creation.
+* **Key Achievements:**
+    - Validated API connection via environment variables.
+    - Successfully created a $78.00 test charge via Python.
+* **Deliverables:** [View Day 39 Folder](./api-testing/Day_39/)
+- **Status:** Completed ✅
