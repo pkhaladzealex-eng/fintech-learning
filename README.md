@@ -475,3 +475,13 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully created a $78.00 test charge via Python.
 * **Deliverables:** [View Day 39 Folder](./api-testing/Day_39/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 40: Financial Data Analytics
+* **Goal:** Batch process transactions and generate a statistical financial report.
+* **Key Achievements:**
+    - Automated fetching and storing of multiple Stripe charges.
+    - Calculated Total Revenue, Average, Max, and Min charges via Python.
+* **Deliverables:** [View Day 40 Folder](./api-testing/Day_40/)
+- **Status:** Completed ✅
