@@ -485,3 +485,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Calculated Total Revenue, Average, Max, and Min charges via Python.
 * **Deliverables:** [View Day 40 Folder](./api-testing/Day_40/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 41: Multi-Card Analytics
+* **Goal:** Test multiple card brands and implement data grouping.
+* **Key Achievements:**
+    - Dynamically updated database schema to track card brands.
+    - Automated charges for Visa, Mastercard, and Amex.
+    - Generated a grouped transaction report via SQL.
+* **Deliverables:** [View Day 41 Folder](./api-testing/Day_41/)
+- **Status:** Completed ✅

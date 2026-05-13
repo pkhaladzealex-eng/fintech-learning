@@ -25,7 +25,7 @@ def fetch_and_store_charges():
         amount = c.amount
         status = c.status
 
-        # Matches your schema: charge_id, amount_cents, status
+        # Matches schema: charge_id, amount_cents, status
         cursor.execute("""
             INSERT OR IGNORE INTO charges (charge_id, amount_cents, status)
             VALUES (?, ?, ?)
