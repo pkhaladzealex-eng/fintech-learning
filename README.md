@@ -496,3 +496,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Generated a grouped transaction report via SQL.
 * **Deliverables:** [View Day 41 Folder](./api-testing/Day_41/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 42: Customer Data Management
+* **Goal:** Synchronize Stripe customer data with local SQLite storage.
+* **Key Achievements:**
+    - Integrated Stripe Customer API for automated user creation.
+    - Successfully mapped cloud-based Customer IDs to local relational records.
+    - Verified data integrity via custom Python/SQL query scripts.
+* **Deliverables:** [View Day 42 Folder](./api-testing/Day_42/)
+- **Status:** Completed ✅
