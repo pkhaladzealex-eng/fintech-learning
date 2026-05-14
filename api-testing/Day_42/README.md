@@ -14,7 +14,7 @@ The goal was to demonstrate proficiency in managing customer data via Stripe API
 ![Stripe Customers](./stripe-customers-list.jpg)
 
 ### 2. Automated Customer Query Report
-![Terminal Query](./terminal-customers-query.jpg)
+![Terminal Query](./terminal-customers-query.png)
 
 ## Key Learning
 I learned how to effectively map API responses to a local database schema. Mastering customer data synchronization is fundamental for building CRM (Customer Relationship Management) systems and subscription-based fintech platforms.
