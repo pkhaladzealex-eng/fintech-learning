@@ -507,3 +507,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Verified data integrity via custom Python/SQL query scripts.
 * **Deliverables:** [View Day 42 Folder](./api-testing/Day_42/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 43: Relational Data Joining
+* **Goal:** Create transactions linked to specific customers and query combined data.
+* **Key Achievements:**
+    - Transitioned to Stripe's modern PaymentIntent workflow.
+    - Designed an SQL INNER JOIN to cross-reference transactions with customer profiles.
+    - Verified end-to-end relational data alignment via automated scripts.
+* **Deliverables:** [View Day 43 Folder](./api-testing/Day_43/)
+- **Status:** Completed ✅
