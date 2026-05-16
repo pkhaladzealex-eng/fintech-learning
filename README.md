@@ -518,3 +518,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Verified end-to-end relational data alignment via automated scripts.
 * **Deliverables:** [View Day 43 Folder](./api-testing/Day_43/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 44: Multi-Charge Aggregation
+* **Goal:** Process multiple charges for one customer and compute cumulative financial metrics.
+* **Key Achievements:**
+    - Handled sequential API requests with payment intents.
+    - Used SQL aggregation (`SUM`, `COUNT`) to track customer total spending.
+    - Successfully validated local database financial reporting against Stripe data.
+* **Deliverables:** [View Day 44 Folder](./api-testing/Day_44/)
+- **Status:** Completed ✅
