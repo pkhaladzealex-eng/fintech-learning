@@ -529,3 +529,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully validated local database financial reporting against Stripe data.
 * **Deliverables:** [View Day 44 Folder](./api-testing/Day_44/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 45: Advanced Financial Reporting (Charges vs Refunds)
+* **Goal:** Restructure the database schema to introduce Refunds and build a Python script for global net-revenue checking.
+* **Key Achievements:**
+    - Rebuilt `charges` and `refunds` tables with explicit Primary Keys (`pk`) to ensure structural data integrity.
+    - Manually synchronized live Sandbox transaction mutations for multi-state accounting logs.
+    - Developed an automated report script using `LEFT JOIN` and `COALESCE` to accurately compute customer Net Revenue.
+* **Deliverables:** [View Day 45 Folder](./api-testing/Day_45/)
+- **Status:** Completed ✅
