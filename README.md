@@ -540,3 +540,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Developed an automated report script using `LEFT JOIN` and `COALESCE` to accurately compute customer Net Revenue.
 * **Deliverables:** [View Day 45 Folder](./api-testing/Day_45/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 46: Stripe Webhooks Architecture
+* **Goal:** Audit asynchronous Stripe Webhook event structures and develop a polymorphic Python JSON parsing core.
+* **Key Achievements:**
+    - Inspected live production log streams inside the Stripe Developer Workbench to isolate event tracking configurations.
+    - Built a robust routing module capable of safely mapping and decoding complex asymmetrical JSON payloads.
+    - Handled functional multi-state extractions covering successful payments, reverse operations, and profile events.
+* **Deliverables:** [View Day 46 Folder](./api-testing/Day_46/)
+- **Status:** Completed ✅
