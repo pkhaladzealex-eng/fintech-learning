@@ -11,16 +11,16 @@ The core focus of Day 46 was shifting from standard REST API polling to event-dr
 ## Visual Documentation
 
 ### 1. Stripe Workbench: Charge Succeeded Event Log
-![Charge Succeeded Event](./charge.refund.updated.jpg)
+![Charge Succeeded Event](./charge.refund.updated.png)
 
 ### 2. Stripe Workbench: Charge Refunded Event Log
-![Charge Refunded Event](./charge.refunded.jpg)
+![Charge Refunded Event](./charge.refunded.png)
 
 ### 3. Stripe Workbench: Refund Created Stream
-![Refund Created Stream](./refund.created.jpg)
+![Refund Created Stream](./refund.created.png)
 
 ### 4. Stripe Workbench: Refund Updated Mutation
-![Refund Updated Mutation](./refund.updated.jpg)
+![Refund Updated Mutation](./refund.updated.png)
 
 ## Key Learning
 - **Asymmetric Schema Mapping:** Gained deep operational knowledge on how event objects maintain entirely unique schemas wrapped within a standardized top-level Stripe event container.
