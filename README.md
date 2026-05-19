@@ -551,3 +551,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Handled functional multi-state extractions covering successful payments, reverse operations, and profile events.
 * **Deliverables:** [View Day 46 Folder](./api-testing/Day_46/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 47: Stripe Webhook Events & Matrix Mapping
+* **Goal:** Research core webhook event lifecycles and build a programmatic Python documentation array module.
+* **Key Achievements:**
+    - Audited `charge.succeeded`, `charge.failed`, and `charge.refunded` behaviors for robust payment testing profiles.
+    - Implemented a structured Python event data registry mapping trigger conditions and schema configurations.
+    - Generated a dynamic iterator script capable of cleanly unpacking and logging backend payload parameters.
+* **Deliverables:** [View Day 47 Folder](./api-testing/Day_47/)
+- **Status:** Completed ✅
