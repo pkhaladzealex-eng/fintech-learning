@@ -562,3 +562,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Generated a dynamic iterator script capable of cleanly unpacking and logging backend payload parameters.
 * **Deliverables:** [View Day 47 Folder](./api-testing/Day_47/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 48: Advanced Webhook Ingestion & Validation
+* **Goal:** Capture authentic Stripe charge payloads and build a defensive Python JSON parsing script with schema validation.
+* **Key Achievements:**
+    - Triggered and audited real asynchronous transaction logs directly from the Stripe Developer Workbench.
+    - Engineered a robust Python script (`day48.py`) executing strict multi-layer key validation models.
+    - Successfully extracted and transformed internal tracking variables and epoch timestamps into formatted outputs.
+* **Deliverables:** [View Day 48 Folder](./api-testing/Day_48/)
+- **Status:** Completed ✅
