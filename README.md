@@ -573,3 +573,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully extracted and transformed internal tracking variables and epoch timestamps into formatted outputs.
 * **Deliverables:** [View Day 48 Folder](./api-testing/Day_48/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 49: Asynchronous Error Ingestion & Parsing
+* **Goal:** Process credit card decline webhooks and write a Python parsing routine to extract diagnostic error arrays.
+* **Key Achievements:**
+    - Triggered live asynchronous failure sequences using simulated card declination parameters (`tok_chargeDeclined`).
+    - Engineered a comprehensive parsing script (`day49.py`) navigating deep conditional `last_payment_error` data blocks.
+    - Generated structural diagnostic trace records cleanly logging systemic rejection metadata and error reasons.
+* **Deliverables:** [View Day 49 Folder](./api-testing/Day_49/)
+- **Status:** Completed ✅
