@@ -584,3 +584,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Generated structural diagnostic trace records cleanly logging systemic rejection metadata and error reasons.
 * **Deliverables:** [View Day 49 Folder](./api-testing/Day_49/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 51: Defensive Exception Handling & Fault Tolerance
+* **Goal:** Integrate structural error handling blocks into early charge processing logic to prevent runtime application breakdown.
+* **Key Achievements:**
+    - Audited systemic vulnerability points inside integration networks to isolate communication failure vectors.
+    - Engineered an advanced error handler script (`day51.py`) catching explicit vendor exceptions and invalid payloads.
+    - Executed targeted fault-injection tests using corrupted parameters to validate diagnostic handling logic.
+* **Deliverables:** [View Day 51 Folder](./api-testing/Day_51/)
+- **Status:** Completed ✅
