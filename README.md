@@ -595,3 +595,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Executed targeted fault-injection tests using corrupted parameters to validate diagnostic handling logic.
 * **Deliverables:** [View Day 51 Folder](./api-testing/Day_51/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 52: Data Integrity Gateways & Ledger Validation
+* **Goal:** Implement multi-layer logical assertions inside financial aggregation loops to handle missing values and faulty constraints.
+* **Key Achievements:**
+    - Upgraded historical net revenue calculations with defensive data verification gates.
+    - Programmed a script (`day52.py`) validating customer identifiers, positive amounts, and realistic refund bounds.
+    - Verified ledger balancing against corrupted records while processing valid parameters dynamically.
+* **Deliverables:** [View Day 52 Folder](./api-testing/Day_52/)
+- **Status:** Completed ✅
