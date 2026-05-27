@@ -39,7 +39,7 @@ def validate_and_process_finances():
             net_usd = charges_usd - refunds_usd
             company_total_revenue += net_usd
         else:
-            print(f"   ↳ [Validation Failed] Skipping record for {name}")
+            print(f"Validation Failed, Skipping record for {name}")
     print(f'Total Revenue: {company_total_revenue:.2f}')
     conn.close()
 
