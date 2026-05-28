@@ -1,0 +1,3 @@
+2026-05-28 17:54:32,541 - INFO - ✓ Multi-layer behavioral assertions passed successfully.
+2026-05-28 17:54:32,541 - INFO - Initiating secure network lookup for Charge Target: ch_3TZHd0JP62O0ob1e29DOOv37
+2026-05-28 17:54:32,548 - ERROR - Stripe Provider Network Rejection: No API key provided. (HINT: set your API key using "stripe.api_key = <API-KEY>"). You can generate API keys from the Stripe web interface.  See https://stripe.com/api for details, or email support@stripe.com if you have any questions.

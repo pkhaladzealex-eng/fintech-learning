@@ -29,8 +29,7 @@ def create_stripe_customers():
                 description="Day 42 Automation Test"
             )
 
-            # Insert into your existing database schema
-            # We'll leave payment_method as 'API Generated' for now
+
             cursor.execute("""
                 INSERT INTO customers (name, email, payment_method, stripe_customer_id)
                 VALUES (?, ?, ?, ?)
