@@ -6,7 +6,7 @@ import os
 # Get the exact absolute path of the api-testing folder
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE_PATH = os.path.join(BASE_DIR, 'logs', 'payment_logs.txt')
-
+stripe.api_key = os.environ.get('STRIPE_API_KEY')
 # Setup logging configuration dynamically using the absolute target path
 logging.basicConfig(
     filename=LOG_FILE_PATH,
