@@ -650,3 +650,16 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully refactored transaction processing routines to cleanly eliminate redundancies and implement the DRY programming paradigm.
 * **Deliverables:** [View Architectural Framework](./api-testing/)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 57: Database Transactions & Rollback Mechanics
+* **Goal:** Implement ACID-compliant transactional boundaries to ensure database integrity during partial runtime failures.
+* **Key Achievements:**
+    - Integrated explicit transaction blocks (`BEGIN TRANSACTION`, `COMMIT`, `ROLLBACK`) using Python's `sqlite3` API.
+    - Designed a fault-injection test pipeline to simulate unexpected mid-execution runtime errors.
+    - Verified that in-memory mutations are completely discarded during a collapse, safely restoring the schema to its baseline state.
+* **Deliverables:**
+    - [View Transaction Script](./api-testing/scripts/day57.py)
+    - [View Execution Screenshot](./api-testing/day57.png)
+- **Status:** Completed ✅
