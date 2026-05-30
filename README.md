@@ -663,3 +663,16 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [View Transaction Script](./api-testing/scripts/day57.py)
     - [View Execution Screenshot](./api-testing/day57.png)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 58: Rate Limiting & Throttling Architecture
+* **Goal:** Implement programmatic rate limiting mechanisms to insulate live financial providers from API exhaustion or credential-stuffing triggers.
+* **Key Achievements:**
+    - Developed an active request-throttling loop leveraging Python's `time.sleep` intervals to pace sequential integration calls.
+    - Engineered defensive structural fallbacks inside the payload grid to produce graceful simulated audits during authentication or token rejections.
+    - Verified downstream persistence layers successfully commit consolidated arrays using highly performance-efficient batch updates (`executemany`).
+* **Deliverables:**
+    - [View Throttling Script](./api-testing/scripts/day58.py)
+    - [View Execution Screenshot](./api-testing/day58.png)
+- **Status:** Completed ✅

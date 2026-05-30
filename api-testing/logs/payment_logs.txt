@@ -2,3 +2,75 @@
 2026-05-28 17:54:32,541 - INFO - Initiating secure network lookup for Charge Target: ch_3TZHd0JP62O0ob1e29DOOv37
 2026-05-28 17:54:32,548 - ERROR - Stripe Provider Network Rejection: No API key provided. (HINT: set your API key using "stripe.api_key = <API-KEY>"). You can generate API keys from the Stripe web interface.  See https://stripe.com/api for details, or email support@stripe.com if you have any questions.
 2026-05-28 18:25:10,236 - INFO - ✓ Multi-layer behavioral assertions passed successfully.
+2026-05-30 20:10:41,787 - INFO - Triggering sequenced API fetch cycle for Request [1/5]
+2026-05-30 20:10:41,787 - INFO - Initiating secure network lookup for Charge Target: ch_3TTlJHJP62O0ob1e0R3E4KTz
+2026-05-30 20:10:41,958 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TTlJHJP62O0ob1e0R3E4KTz
+2026-05-30 20:10:42,129 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TTlJHJP62O0ob1e0R3E4KTz response_code=401
+2026-05-30 20:10:42,129 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:10:42,129 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:10:42,129 - ERROR - Unable to fetch live provider metadata for ID: ch_3TTlJHJP62O0ob1e0R3E4KTz. Generating fallback audit context.
+2026-05-30 20:10:43,134 - INFO - Triggering sequenced API fetch cycle for Request [2/5]
+2026-05-30 20:10:43,135 - INFO - Initiating secure network lookup for Charge Target: ch_3TTlJeJP62O0ob1e2YztVXyQ
+2026-05-30 20:10:43,135 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TTlJeJP62O0ob1e2YztVXyQ
+2026-05-30 20:10:43,189 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TTlJeJP62O0ob1e2YztVXyQ response_code=401
+2026-05-30 20:10:43,189 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:10:43,190 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:10:43,190 - ERROR - Unable to fetch live provider metadata for ID: ch_3TTlJeJP62O0ob1e2YztVXyQ. Generating fallback audit context.
+2026-05-30 20:10:44,195 - INFO - Triggering sequenced API fetch cycle for Request [3/5]
+2026-05-30 20:10:44,195 - INFO - Initiating secure network lookup for Charge Target: ch_3TZHd0JP62O0ob1e29DOOv37
+2026-05-30 20:10:44,196 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TZHd0JP62O0ob1e29DOOv37
+2026-05-30 20:10:44,249 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TZHd0JP62O0ob1e29DOOv37 response_code=401
+2026-05-30 20:10:44,250 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:10:44,250 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:10:44,250 - ERROR - Unable to fetch live provider metadata for ID: ch_3TZHd0JP62O0ob1e29DOOv37. Generating fallback audit context.
+2026-05-30 20:10:45,255 - INFO - Triggering sequenced API fetch cycle for Request [4/5]
+2026-05-30 20:10:45,256 - INFO - Initiating secure network lookup for Charge Target: ch_3Mv9xL
+2026-05-30 20:10:45,256 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Mv9xL
+2026-05-30 20:10:45,311 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3Mv9xL response_code=401
+2026-05-30 20:10:45,311 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:10:45,312 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:10:45,312 - ERROR - Unable to fetch live provider metadata for ID: ch_3Mv9xL. Generating fallback audit context.
+2026-05-30 20:10:46,317 - INFO - Triggering sequenced API fetch cycle for Request [5/5]
+2026-05-30 20:10:46,317 - INFO - Initiating secure network lookup for Charge Target: ch_3TSFzTJP62O0ob1e05zgZnMx
+2026-05-30 20:10:46,318 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TSFzTJP62O0ob1e05zgZnMx
+2026-05-30 20:10:46,369 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TSFzTJP62O0ob1e05zgZnMx response_code=401
+2026-05-30 20:10:46,369 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:10:46,369 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:10:46,369 - ERROR - Unable to fetch live provider metadata for ID: ch_3TSFzTJP62O0ob1e05zgZnMx. Generating fallback audit context.
+2026-05-30 20:10:46,373 - ERROR - Structural runtime framework breakdown: table charges has no column named amount
+2026-05-30 20:18:47,042 - INFO - Triggering sequenced API fetch cycle for Request [1/5]
+2026-05-30 20:18:47,042 - INFO - Initiating secure network lookup for Charge Target: ch_3TTlJHJP62O0ob1e0R3E4KTz
+2026-05-30 20:18:47,186 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TTlJHJP62O0ob1e0R3E4KTz
+2026-05-30 20:18:47,345 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TTlJHJP62O0ob1e0R3E4KTz response_code=401
+2026-05-30 20:18:47,345 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:18:47,345 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:18:47,345 - ERROR - Unable to fetch live provider metadata for ID: ch_3TTlJHJP62O0ob1e0R3E4KTz. Generating fallback audit context.
+2026-05-30 20:18:48,351 - INFO - Triggering sequenced API fetch cycle for Request [2/5]
+2026-05-30 20:18:48,351 - INFO - Initiating secure network lookup for Charge Target: ch_3TTlJeJP62O0ob1e2YztVXyQ
+2026-05-30 20:18:48,352 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TTlJeJP62O0ob1e2YztVXyQ
+2026-05-30 20:18:48,406 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TTlJeJP62O0ob1e2YztVXyQ response_code=401
+2026-05-30 20:18:48,406 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:18:48,407 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:18:48,407 - ERROR - Unable to fetch live provider metadata for ID: ch_3TTlJeJP62O0ob1e2YztVXyQ. Generating fallback audit context.
+2026-05-30 20:18:49,408 - INFO - Triggering sequenced API fetch cycle for Request [3/5]
+2026-05-30 20:18:49,408 - INFO - Initiating secure network lookup for Charge Target: ch_3TZHd0JP62O0ob1e29DOOv37
+2026-05-30 20:18:49,409 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TZHd0JP62O0ob1e29DOOv37
+2026-05-30 20:18:49,457 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TZHd0JP62O0ob1e29DOOv37 response_code=401
+2026-05-30 20:18:49,457 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:18:49,457 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:18:49,457 - ERROR - Unable to fetch live provider metadata for ID: ch_3TZHd0JP62O0ob1e29DOOv37. Generating fallback audit context.
+2026-05-30 20:18:50,461 - INFO - Triggering sequenced API fetch cycle for Request [4/5]
+2026-05-30 20:18:50,461 - INFO - Initiating secure network lookup for Charge Target: ch_3Mv9xL
+2026-05-30 20:18:50,462 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3Mv9xL
+2026-05-30 20:18:50,516 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3Mv9xL response_code=401
+2026-05-30 20:18:50,517 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:18:50,517 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:18:50,517 - ERROR - Unable to fetch live provider metadata for ID: ch_3Mv9xL. Generating fallback audit context.
+2026-05-30 20:18:51,522 - INFO - Triggering sequenced API fetch cycle for Request [5/5]
+2026-05-30 20:18:51,523 - INFO - Initiating secure network lookup for Charge Target: ch_3TSFzTJP62O0ob1e05zgZnMx
+2026-05-30 20:18:51,523 - INFO - message='Request to Stripe api' method=get url=https://api.stripe.com/v1/charges/ch_3TSFzTJP62O0ob1e05zgZnMx
+2026-05-30 20:18:51,576 - INFO - message='Stripe API response' path=https://api.stripe.com/v1/charges/ch_3TSFzTJP62O0ob1e05zgZnMx response_code=401
+2026-05-30 20:18:51,576 - INFO - error_code=None error_message='Invalid API Key provided: st_test_**********2345' error_param=None error_type=invalid_request_error message='Stripe v1 API error received'
+2026-05-30 20:18:51,576 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
+2026-05-30 20:18:51,576 - ERROR - Unable to fetch live provider metadata for ID: ch_3TSFzTJP62O0ob1e05zgZnMx. Generating fallback audit context.
+2026-05-30 20:18:51,581 - INFO - ✓ Batch execution successfully committed to transactional database ledger.
