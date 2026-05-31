@@ -687,6 +687,6 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Stripped sensitive, unvetted server error context, mapping exceptions to strict internal categorical failure tokens (`ERR_AUTH_INVALID_KEY`).
 * **Deliverables:**
     - [View Masking Script](./api-testing/scripts/day59.py)
-    - [View Console Output Screenshot](./api-testing/day59_terminal.jpg)
+    - [View Console Output Screenshot](./api-testing/day59_terminal.png)
     - [View Anonymized Log File View](./api-testing/day59_logs.png)
 - **Status:** Completed ✅
