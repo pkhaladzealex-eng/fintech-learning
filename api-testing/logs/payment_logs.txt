@@ -74,3 +74,4 @@
 2026-05-30 20:18:51,576 - ERROR - Stripe Provider Network Rejection: Invalid API Key provided: st_test_**********2345
 2026-05-30 20:18:51,576 - ERROR - Unable to fetch live provider metadata for ID: ch_3TSFzTJP62O0ob1e05zgZnMx. Generating fallback audit context.
 2026-05-30 20:18:51,581 - INFO - ✓ Batch execution successfully committed to transactional database ledger.
+2026-05-31 15:07:42,009 - ERROR - SECURE-MASK: Webhook Failure intercepted | Hashed_ID: 2a952efe720fa2c... | Cust_ID: cus_UGdGpL2aG13kxG | Code: ERR_AUTH_INVALID_KEY

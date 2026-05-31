@@ -676,3 +676,17 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [View Throttling Script](./api-testing/scripts/day58.py)
     - [View Execution Screenshot](./api-testing/day58.png)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 59: Telemetry Masking & Data Privacy Architecture
+* **Goal:** Secure asynchronous logging pipelines against exposure of Personally Identifiable Information (PII) and credentials.
+* **Key Achievements:**
+    - Implemented secure one-way cryptographic hashing using `hashlib.sha256` to anonymize live identifier tokens before storage.
+    - Engineered split-telemetry routes ensuring raw diagnostic payloads stream to secure stdout terminals while masked metadata enters flat loggers.
+    - Stripped sensitive, unvetted server error context, mapping exceptions to strict internal categorical failure tokens (`ERR_AUTH_INVALID_KEY`).
+* **Deliverables:**
+    - [View Masking Script](./api-testing/scripts/day59.py)
+    - [View Console Output Screenshot](./api-testing/day59_terminal.jpg)
+    - [View Anonymized Log File View](./api-testing/day59_logs.png)
+- **Status:** Completed ✅
