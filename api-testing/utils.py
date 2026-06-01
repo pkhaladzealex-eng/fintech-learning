@@ -3,16 +3,18 @@ import stripe
 import json
 import os
 
-# Get the exact absolute path of the api-testing folder
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_FILE_PATH = os.path.join(BASE_DIR, 'logs', 'payment_logs.txt')
+import config
+
 stripe.api_key = os.environ.get('STRIPE_API_KEY')
-# Setup logging configuration dynamically using the absolute target path
+
+
 logging.basicConfig(
-    filename=LOG_FILE_PATH,
+    filename=config.LOG_FILE_PATH,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+
 
 def log_event(level, message):
     """Reusable function to pipeline clean logs both to file and console."""
