@@ -717,3 +717,15 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 - **Status:** **GRADUATED & COMPLETED** 
 
+
+---
+
+## 📅 Day 61: Introduction to Web Automation & Selenium Core
+* **Goal:** Research the architectural foundations of browser automation, cross-browser verification matrix, and Selenium WebDriver components.
+* **Key Achievements:**
+    - Analyzed the paradigm shift from backend API evaluation to User Interface (UI) and Document Object Model (DOM) layer automated tracking.
+    - Demystified the W3C WebDriver specification and JSON-based communication routing between clients and native browser binaries.
+    - Defined automated End-to-End (E2E) functional testing pathways within persistent deployment environments.
+* **Deliverables:**
+    - [Read Selenium Architectural Notes](./payment-setup/day61-selenium-intro.md)
+- **Status:** Completed ✅
