@@ -729,3 +729,16 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Deliverables:**
     - [Read Selenium Architectural Notes](./payment-setup/day61-selenium-intro.md)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 62: First Browser Automation Script & WebDriver Lifecycle
+* **Goal:** Install Selenium WebDriver, configure environment pipelines, and launch an automated browser session.
+* **Key Achievements:**
+    - Initialized automated Chrome instance using Selenium 4's native manager without hardcoding binary driver paths.
+    - Successfully drove the automated browser engine to navigate target endpoints (`google.com`).
+    - Extracted core UI metadata (`driver.title`) and orchestrated clean session destruction routines.
+* **Deliverables:**
+    - [Automated Integration Script](./api-testing/scripts/day62.py)
+    - [View Automation Output Screenshot](./api-testing/day62_output.png)
+- **Status:** Completed ✅
