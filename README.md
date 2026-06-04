@@ -742,3 +742,17 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Automated Integration Script](./api-testing/scripts/day62.py)
     - [View Automation Output Screenshot](./api-testing/day62_output.png)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 63: UI Automation Screenshots & Wait Operations
+* **Goal:** Practice programmatic UI interaction, window rendering synchronization, and automated visual capture states.
+* **Key Achievements:**
+    - Orchestrated explicit timing pauses (`time.sleep`) allowing complex authentication forms to cleanly render within the DOM grid.
+    - Utilized `driver.save_screenshot` to programmatically capture active web views directly into local tracking assets.
+    - Compared manual financial dashboard exports with automated visual testing buffers.
+* **Deliverables:**
+    - [Automated Screenshot Script](./api-testing/scripts/day63.py)
+    - [Programmatic Dashboard Screenshot](./api-testing/scripts/stripe_dashboard.png)
+    - [Manual Dashboard Screenshot](./api-testing/scripts/stripe_dashboard_manual.png)
+- **Status:** Completed ✅
