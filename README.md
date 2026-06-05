@@ -756,3 +756,18 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Programmatic Dashboard Screenshot](./api-testing/scripts/stripe_dashboard.png)
     - [Manual Dashboard Screenshot](./api-testing/scripts/stripe_dashboard_manual.png)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 64: DOM Locators & E-Commerce Checkout Form Inspection
+* **Goal:** Practice element identification strategies using explicit DOM attributes (`By.ID`, `By.NAME`) inside checkout pipelines.
+* **Key Achievements:**
+    - Evaluated structure mapping mechanisms for form fields within sandbox e-commerce test interfaces.
+    - Successfully resolved targeted interface boundaries using runtime attribute assertions (`get_attribute`).
+    - Captured automated runtime layout benchmarks against manual visual execution records.
+* **Deliverables:**
+    - [Automated Locator Script](./api-testing/scripts/day64.py)
+    - [Programmatic Checkout State Capture](./api-testing/scripts/checkout_form_automated.png)
+    - [Manual Checkout State Capture](./api-testing/scripts/checkout_form_manual.png)
+    - [Terminal Execution Trace](./api-testing/scripts/day64_terminal.png)
+- **Status:** Completed ✅
