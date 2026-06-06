@@ -771,3 +771,17 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Manual Checkout State Capture](./api-testing/scripts/checkout_form_manual.png)
     - [Terminal Execution Trace](./api-testing/scripts/day64_terminal.png)
 - **Status:** Completed ✅
+
+---
+
+## 📅 Day 65: Programmatic Form Interaction & Data Injection
+* **Goal:** Master input injection methodologies using Selenium's `send_keys` framework to drive transaction and checkout data forms.
+* **Key Achievements:**
+    - Established pre-requisite authentication tokens dynamically before executing target form manipulation.
+    - Simulated real-user keyboard input vectors to populate secure DOM entry zones (`By.ID`, `By.NAME`).
+    - Captured and validated automated state rendering of fully populated checkout layouts.
+* **Deliverables:**
+    - [Automated Injection Script](./api-testing/scripts/day65.py)
+    - [Programmatic Filled State Capture](./api-testing/scripts/filled_checkout_form.png)
+    - [Terminal Execution Trace](./api-testing/scripts/day65_terminal.png)
+- **Status:** Completed ✅
