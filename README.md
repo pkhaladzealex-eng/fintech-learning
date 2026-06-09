@@ -807,3 +807,14 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ### Key Takeaway:
 Successfully chained authentication, inventory routing, and checkout information submission. Captured DOM states to verify structured form validation before final payment processing.
+### 📅 Day 66: UI Test Automation – End-to-End Checkout Flow
+* **Goal:** Automate the complete e-commerce checkout pipeline including authentication, form handling, and final submission using Swag Labs sandbox.
+* **Key Achievements:**
+    - Orchestrated end-to-end programmatic user flow utilizing dynamic action methods (`click()`, `send_keys`).
+    - Synchronized UI state transitions between login, catalog inventory routing, and user information injection.
+    - Verified cross-page DOM title validations to ensure successful navigation into the final step.
+* **Deliverables:**
+    - [Automated Checkout Script](./api-testing/scripts/day66.py)
+    - [Programmatic Checkout State Capture](./api-testing/scripts/checkout_commplete.png)
+    - [Terminal Execution Trace](./api-testing/scripts/terminal_day66.png)
+- **Status:** Completed ✅
