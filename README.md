@@ -814,7 +814,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Deliverables:**
 
     - [Smart Wait Automation Script](./api-testing/scripts/day67.py)
-    - [Smart Wait Catalog Capture](./api-testing/scripts/day67_smart_wait.jpg)
+    - [Smart Wait Catalog Capture](./api-testing/scripts/day67_smart_wait.png)
 
 - **Status:** Completed 
 
