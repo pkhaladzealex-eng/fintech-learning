@@ -798,3 +798,22 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Programmatic Checkout State Capture](./api-testing/scripts/checkout_commplete.png)
     - [Terminal Execution Trace](./api-testing/scripts/terminal_day66.png)
 - **Status:** Completed ✅
+
+---## 📅 Day 67: Smart Waits & Synchronization (WebDriverWait)
+
+* **Goal:** Implement dynamic synchronization mechanisms (`WebDriverWait` and `ExpectedConditions`) to replace brittle static pauses (`time.sleep`).
+
+* **Key Achievements:**
+
+    - Integrated explicit wait structures to poll the DOM dynamically up to 10 seconds for targeted element presence.
+
+    - Optimized execution efficiency by terminating the wait sequence the exact millisecond the login fields became interactable.
+
+    - Documented architectural benefits of smart waiting vs. static delays regarding automation stability and network latency.
+
+* **Deliverables:**
+
+    - [Smart Wait Automation Script](./api-testing/scripts/day67.py)
+
+- **Status:** Completed 
+
