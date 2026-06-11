@@ -818,3 +818,30 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 - **Status:** Completed 
 
+
+
+
+---
+
+
+
+### 📅 Day 68: Error Handling & Verification (WebDriverWait)
+
+* **Goal:** Use `try/except` and `WebDriverWait` to verify if the payment page loaded successfully or failed.
+
+* **Key Achievements:**
+
+    - Combined form submission with explicit waits to handle page transitions.
+
+    - Added error handling to print a clear message if the success element does not appear.
+
+* **Deliverables:**
+
+    - [Automation Script](./api-testing/scripts/day68.py)
+
+    - [Success Page Capture](./api-testing/scripts/day68_success.png)
+
+    - [Terminal Execution Trace](./api-testing/scripts/day68_terminal.png)
+
+- **Status:** Completed 
+
