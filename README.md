@@ -845,3 +845,12 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 - **Status:** Completed 
 
+
+---
+
+### 📅 Day 69: Code Refactoring & Helper Functions (DRY)
+* **Goal:** Create a reusable utils file to avoid repeating Selenium code.
+* **Deliverables:**
+    - [Selenium Utilities File](./api-testing/selenium_utils.py)
+    - [Refactored Automation Script](./api-testing/scripts/day69.py)
+- **Status:** Completed ✅
