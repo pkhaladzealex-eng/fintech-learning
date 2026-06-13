@@ -854,3 +854,22 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Selenium Utilities File](./api-testing/selenium_utils.py)
     - [Refactored Automation Script](./api-testing/scripts/day69.py)
 - **Status:** Completed ✅
+
+
+
+---
+
+
+
+### 📅 Day 70: Introduction to Pytest
+
+* **Goal:** Install Pytest and write automated test cases to run multiple tests together.
+
+* **Deliverables:**
+
+    - [Pytest Automation Script](./api-testing/scripts/test_payment_selenium.py)
+
+    - [Pytest Terminal Execution Trace](./api-testing/scripts/test_1.png)
+
+- **Status:** Completed 
+
