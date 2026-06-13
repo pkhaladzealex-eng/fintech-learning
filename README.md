@@ -861,15 +861,26 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
+cat << 'EOF' >> README.md
+
+
+
+---
+
+
+
 ### 📅 Day 70: Introduction to Pytest
 
 * **Goal:** Install Pytest and write automated test cases to run multiple tests together.
 
 * **Deliverables:**
 
-    - [Pytest Automation Script](./api-testing/scripts/test_payment_selenium.py)
+    - [Pytest Automation Script](./api-testing/tests/test_payment_selenium.py)
 
-    - [Pytest Terminal Execution Trace](./api-testing/scripts/test_1.png)
+    - [Pytest Terminal Execution Trace](./api-testing/tests/test_1.png)
 
 - **Status:** Completed 
+
+EOF
+
 
