@@ -890,6 +890,6 @@ EOF
 ### 📅 Day 71: Pytest Fixtures (Setup & Cleanup)
 * **Goal:** Use pytest fixtures to handle browser setup and cleanup automatically for each test.
 * **Deliverables:**
-    - [Advanced Pytest Script](./api-testing/scripts/test_payment_advanced.py)
-    - [Fixture Execution Trace](./api-testing/scripts/day71.png)
+    - [Advanced Pytest Script](./api-testing/tests/test_payment_advanced.py)
+    - [Fixture Execution Trace](./api-testing/tests/day71.png)
 - **Status:** Completed ✅
