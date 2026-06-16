@@ -902,3 +902,22 @@ EOF
     - [Integration Test Script](./api-testing/tests/test_payment_full_integration.py)
     - [Integration Test Execution Trace](./api-testing/tests/day72.png)
 - **Status:** Completed ✅
+
+
+
+---
+
+
+
+### 📅 Day 73: Testing Error Scenarios
+
+* **Goal:** Write automated tests to check how the system handles declined cards, missing data, and timeouts.
+
+* **Deliverables:**
+
+    - [Error Scenarios Test Script](./api-testing/tests/test_payment_error_scenarios.py)
+
+    - [Error Tests Execution Trace](./api-testing/tests/day73.png)
+
+- **Status:** Completed 
+
