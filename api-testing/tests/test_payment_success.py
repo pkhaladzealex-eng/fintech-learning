@@ -10,16 +10,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from selenium_utils import login_to_site, fill_checkout_form, verify_checkout_result
 
 
-# Setup and Cleanup browser session using pytest fixture
-@pytest.fixture
-def driver():
-    print("\n[Setup] Opening Chrome Browser...")
-    d = webdriver.Chrome()
-
-    yield d  # This provides the driver instance to our tests
-
-    print("\n[Cleanup] Closing Chrome Browser...")
-    d.quit()
 
 
 # Test 1: Successful checkout using driver fixture

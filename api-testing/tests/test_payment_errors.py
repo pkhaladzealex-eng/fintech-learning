@@ -11,19 +11,11 @@ from selenium_utils import login_to_site, fill_checkout_form, verify_checkout_re
 from config import DATABASE_PATH as DB_PATH
 
 
-# Browser fixture for setup and cleanup
-@pytest.fixture
-def driver():
-    print("\n[Setup] Starting Browser for Error Scenario Test...")
-    d = webdriver.Chrome()
-    yield d
-    print("\n[Cleanup] Closing Browser...")
-    d.quit()
-
 
 # Test 1: Simulating a declined card scenario
 def test_declined_card_payment(driver):
     print("\n--- Running: test_declined_card_payment ---")
+
     driver.get("https://www.saucedemo.com")
     login_to_site(driver, "standard_user", "secret_sauce")
 
@@ -41,6 +33,7 @@ def test_declined_card_payment(driver):
 # Test 2: Simulating form validation with missing data (Postal Code)
 def test_missing_cvv(driver):
     print("\n--- Running: test_missing_cvv ---")
+
     driver.get("https://www.saucedemo.com")
     login_to_site(driver, "standard_user", "secret_sauce")
 
@@ -59,6 +52,7 @@ def test_missing_cvv(driver):
 # Test 3: Simulating a payment timeout scenario
 def test_payment_timeout(driver):
     print("\n--- Running: test_payment_timeout ---")
+
     driver.get("https://www.saucedemo.com")
     login_to_site(driver, "standard_user", "secret_sauce")
 

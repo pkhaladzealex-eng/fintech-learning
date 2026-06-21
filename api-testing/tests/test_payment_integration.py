@@ -14,14 +14,6 @@ from selenium_utils import login_to_site, fill_checkout_form, verify_checkout_re
 # Import the database path directly from your config.py
 from config import DATABASE_PATH as DB_PATH
 
-# Re-use our browser fixture
-@pytest.fixture
-def driver():
-    print("\n[Setup] Starting Browser for Integration Test...")
-    d = webdriver.Chrome()
-    yield d
-    print("\n[Cleanup] Closing Browser...")
-    d.quit()
 
 
 # Simulated Stripe API helper
