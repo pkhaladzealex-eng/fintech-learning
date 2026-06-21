@@ -919,7 +919,13 @@ EOF
 
     - [Error Tests Execution Trace](./api-testing/tests/day73.png)
 
-- **Status:** Completed 
+- **Status:** Completed
+### Weekly Focus:
+- [ ] Master SQL Joins (Inner, Left, Right)
+- [ ] Daily Python automation exercises
+- [ ] Fintech API basics
+
+
 
 
 
