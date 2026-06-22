@@ -341,28 +341,28 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 ### 📅 Day 22: API Testing & Database Verification
 * **Goal:** Create Stripe payments via Python API and verify data integrity in SQLite.
 - **Key Deliverables:** [View Day 22 Folder & Report](./api-testing/Day_22_API_Testing/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ### 📅 Day 23: API Retrieval
 * **Goal:** Automate fetching charge details using an ID stored in a text file.
 - **Key Deliverables:** [View Day 23 Folder](./api-testing/Day_23_API_Retrieval/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ### 📅 Day 24: Error Handling
 * **Goal:** Use try-except blocks to catch and verify Stripe API payment failures.
 - **Key Deliverables:** [View Day 24 Folder](./api-testing/Day_24_Error_Handling/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ### 📅 Day 25: Data Extraction
 * **Goal:** Extract and format specific fields from API response objects.
 - **Key Deliverables:** [View Day 25 Folder](./api-testing/Day_25_Data_Extraction/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ### 📅 Day 26: Refund Logic
 * **Goal:** Automate payment reversals and handle different Stripe object types.
 - **Key Deliverables:** [View Day 26 Folder](./api-testing/Day_26_Refunds/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ### 📅 Day 27: SQL & Data Aggregation
 * **Goal:** Integrate Python with SQLite to manage and calculate payment data.
 - **Key Deliverables:** [View Day 27 Folder](./api-testing/Day_27_SQL_Integration/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ### 📅 Day 28: Webhooks & Event Integration
 * **Goal:** Understand and configure Stripe Webhooks for real-time payment notifications.
@@ -372,7 +372,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Developed a Python script to simulate and display sample Webhook data for testing.
 * **Concepts Learned:** Push vs. Pull communication, Webhook Endpoints, Event Objects.
 * **Deliverables:** [View Day 28 Folder](./api-testing/Day_28_Webhooks/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ### 📅 Day 29: Parsing Real Webhook Data
 * **Goal:** Extract and process financial data from a live Stripe Webhook JSON payload.
 * **Key Achievements:**
@@ -382,7 +382,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully mapped Unix timestamps and converted currency from cents to dollars in Python.
 * **Concepts Learned:** JSON Hierarchy, Python Dictionary Mapping, Data Type Conversion (`json.loads`).
 * **Deliverables:** [View Day 29 Folder](./api-testing/Day_29/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 ---
 
 ## 📅 Day 31: Advanced Charge Retrieval
@@ -392,7 +392,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented a Python Dictionary to map and format API response data.
     - Converted Unix timestamps and handled currency formatting for end-user readability.
 * **Deliverables:** [View Day 31 Folder](./api-testing/Day_31/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -403,7 +403,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Used `executemany()` for efficient bulk data handling.
     - Automated financial reporting by calculating total transaction amounts from the DB.
 * **Deliverables:** [View Day 32 Folder](./api-testing/Day_32/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -413,7 +413,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully synced live Stripe charges with the local database.
     - Implemented SQL-based analytics for Total and Average transaction amounts.
 * **Deliverables:** [View Day 33 Folder](./api-testing/Day_33/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -423,7 +423,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated the capture of Stripe CardErrors.
     - Implemented SQL logic to compare successful vs failed transaction counts.
 * **Deliverables:** [View Day 34 Folder](./api-testing/Day_34/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -433,7 +433,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Designed and implemented the `refunds` database table.
     - Successfully linked Stripe refund objects to the local audit trail.
 * **Deliverables:** [View Day 35 Folder](./api-testing/Day_35/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -444,7 +444,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated the extraction and formatting of nested JSON fields.
     - Implemented UNIX-to-Human date conversion for better readability.
 * **Deliverables:** [View Day 36 Folder](./api-testing/Day_36/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -454,7 +454,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented a relational database structure for charges and refunds.
     - Automated the "Net Revenue" calculation logic in Python.
 * **Deliverables:** [View Day 37 Folder](./api-testing/Day_37/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -464,7 +464,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Handled `NULL` values in SQL using `IFNULL` for accurate math.
     - Generated a summary report showing $350.00 Total Net Revenue.
 * **Deliverables:** [View Day 38 Folder](./api-testing/Day_38/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -474,7 +474,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Validated API connection via environment variables.
     - Successfully created a $78.00 test charge via Python.
 * **Deliverables:** [View Day 39 Folder](./api-testing/Day_39/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -484,7 +484,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated fetching and storing of multiple Stripe charges.
     - Calculated Total Revenue, Average, Max, and Min charges via Python.
 * **Deliverables:** [View Day 40 Folder](./api-testing/Day_40/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -495,7 +495,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Automated charges for Visa, Mastercard, and Amex.
     - Generated a grouped transaction report via SQL.
 * **Deliverables:** [View Day 41 Folder](./api-testing/Day_41/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -506,7 +506,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Successfully mapped cloud-based Customer IDs to local relational records.
     - Verified data integrity via custom Python/SQL query scripts.
 * **Deliverables:** [View Day 42 Folder](./api-testing/Day_42/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -517,7 +517,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Designed an SQL INNER JOIN to cross-reference transactions with customer profiles.
     - Verified end-to-end relational data alignment via automated scripts.
 * **Deliverables:** [View Day 43 Folder](./api-testing/Day_43/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -528,7 +528,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Used SQL aggregation (`SUM`, `COUNT`) to track customer total spending.
     - Successfully validated local database financial reporting against Stripe data.
 * **Deliverables:** [View Day 44 Folder](./api-testing/Day_44/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -539,7 +539,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Manually synchronized live Sandbox transaction mutations for multi-state accounting logs.
     - Developed an automated report script using `LEFT JOIN` and `COALESCE` to accurately compute customer Net Revenue.
 * **Deliverables:** [View Day 45 Folder](./api-testing/Day_45/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -550,7 +550,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Built a robust routing module capable of safely mapping and decoding complex asymmetrical JSON payloads.
     - Handled functional multi-state extractions covering successful payments, reverse operations, and profile events.
 * **Deliverables:** [View Day 46 Folder](./api-testing/Day_46/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -561,7 +561,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Implemented a structured Python event data registry mapping trigger conditions and schema configurations.
     - Generated a dynamic iterator script capable of cleanly unpacking and logging backend payload parameters.
 * **Deliverables:** [View Day 47 Folder](./api-testing/Day_47/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -572,7 +572,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - Engineered a robust Python script (`day48.py`) executing strict multi-layer key validation models.
     - Successfully extracted and transformed internal tracking variables and epoch timestamps into formatted outputs.
 * **Deliverables:** [View Day 48 Folder](./api-testing/Day_48/)
-- **Status:** Completed ✅
+- **Status:** Completed 
 
 ---
 
@@ -861,7 +861,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
-cat << 'EOF' >> README.md
+
 
 
 
@@ -875,13 +875,13 @@ cat << 'EOF' >> README.md
 
 * **Deliverables:**
 
-    - [Pytest Automation Script](./api-testing/tests/test_payment_selenium.py)
+    - [Pytest Automation Script](./api-testing/tests/old_day71_payment_selenium.py)
 
-    - [Pytest Terminal Execution Trace](./api-testing/tests/test_1.png)
+    - [Pytest Terminal Execution Trace](./api-testing/tests/day_70.png)
 
 - **Status:** Completed 
 
-EOF
+
 
 
 
@@ -890,7 +890,7 @@ EOF
 ### 📅 Day 71: Pytest Fixtures (Setup & Cleanup)
 * **Goal:** Use pytest fixtures to handle browser setup and cleanup automatically for each test.
 * **Deliverables:**
-    - [Advanced Pytest Script](./api-testing/tests/test_payment_advanced.py)
+    - [Advanced Pytest Script](./api-testing/tests/test_payment_success.py)
     - [Fixture Execution Trace](./api-testing/tests/day71.png)
 - **Status:** Completed 
 
@@ -899,7 +899,7 @@ EOF
 ### 📅 Day 72: Full Integration Testing (UI -> API -> DB)
 * **Goal:** Combine Selenium, simulated Stripe API, and SQLite database checks into one single test flow.
 * **Deliverables:**
-    - [Integration Test Script](./api-testing/tests/test_payment_full_integration.py)
+    - [Integration Test Script](./api-testing/tests/test_payment_integration.py)
     - [Integration Test Execution Trace](./api-testing/tests/day72.png)
 - **Status:** Completed 
 
@@ -915,7 +915,7 @@ EOF
 
 * **Deliverables:**
 
-    - [Error Scenarios Test Script](./api-testing/tests/test_payment_error_scenarios.py)
+    - [Error Scenarios Test Script](./api-testing/tests/test_payment_errors.py)
 
     - [Error Tests Execution Trace](./api-testing/tests/day73.png)
 
