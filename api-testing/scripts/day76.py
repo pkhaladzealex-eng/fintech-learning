@@ -2,32 +2,39 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-print("Initializing webdriver")
+
+print("Initializing Chrome WebDriver")
 driver = webdriver.Chrome()
 
 try:
-    print("Navigating to Saucedemo Login page...")
+
+    print("Navigating to SauceDemo Login Page")
     driver.get("https://www.saucedemo.com")
-    time.sleep(5)
+    time.sleep(3)
 
-
-    print("Entering authentication credentials...")
+    print("Entering authentification credentials")
     driver.find_element(By.ID, "user-name").send_keys("standard_user")
     driver.find_element(By.ID, "password").send_keys("secret_sauce")
+    driver.find_element(By.CLASS_NAME, "login_logo").text
+
+    login_button = driver.find_element(By.CLASS_NAME, "submit-button")
+    print(f"Find element by CLASS: {login_button.get_attribute('type')}")
+
+
     driver.find_element(By.ID, "login-button").click()
-    time.sleep(5)
+    time.sleep(3)
 
-    print("Navigating to Checkout Form...")
-    driver.get("https://www.saucedemo.com?checkout-step-one/html")
-    time.sleep(5)
+    print("Navigating to Checkout Form")
+    driver.get("https://www.saucedemo.com/checkout-step-one.html")
+    time.sleep(3)
 
-    print("\n[Locating Form Fields Elements...]")
-
-    first_name_field = driver.find_element(By.ID, "first-name")
-    last_name_field = driver.find_element(By.ID, "last-name")
-    postal_code_field = driver.find_element(By.ID, " postal-code")
 except Exception as e:
-    print(e)
+    print(f"Execution Error: {e}")
 
 finally:
+    print("Closing browser")
     driver.quit()
+
+
+
+
