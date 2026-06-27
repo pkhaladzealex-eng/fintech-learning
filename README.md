@@ -951,3 +951,12 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
+
+---
+
+### 📅 Day 76: E2E Checkout Flow (Revision of Day 64)
+* **Goal:** Review and practice complete e-commerce checkout automation with verification steps.
+* **Deliverables:**
+    - [Automation Revision Script](./api-testing/scripts/day76.py)
+    - [Successful Checkout Screenshot](./api-testing/scripts/day76-checkout-complete.png)
+- **Status:** Completed ✅
