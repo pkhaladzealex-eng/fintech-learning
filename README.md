@@ -970,3 +970,22 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Successful Checkout Screenshot](./api-testing/scripts/day77-checkout-complete.png)
 - **Status:** Completed 
 
+
+
+
+---
+
+
+
+### Day 78: Pytest Integration with Selenium Utilities
+
+* **Goal:** Refactor Selenium UI tests using structured automation helper functions.
+
+* **Deliverables:**
+
+    - [Pytest E2E Test](./api-testing/scripts/day78.py)
+
+    - [Selenium Utility Handlers](./api-testing/scripts/selenium_utils.py)
+
+- **Status:** Completed 
+
