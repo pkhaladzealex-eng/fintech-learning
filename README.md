@@ -983,9 +983,9 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 * **Deliverables:**
 
-    - [Pytest E2E Test](./api-testing/scripts/day78.py)
+    - [Pytest E2E Test](./api-testing/tests/day78.py)
 
-    - [Selenium Utility Handlers](./api-testing/scripts/selenium_utils.py)
+    - [Selenium Utility Handlers](./api-testing/selenium_utils.py)
 
 - **Status:** Completed 
 
