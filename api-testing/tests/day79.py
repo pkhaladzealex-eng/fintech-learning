@@ -52,27 +52,23 @@ def test_complete_shopping_flow(driver):
 def test_checkout_with_invalid_input(driver):
     print("\n[Test] Running: test_checkout_with_invalid_input...")
 
-
     driver.get("https://www.saucedemo.com")
     login_to_site(driver, "standard_user", "secret_sauce")
-
 
     add_products_to_cart(driver)
     navigate_to_checkout(driver)
 
-
     print("[Test] Submitting checkout form with invalid data (Empty First Name)...")
     fill_checkout_form(driver, "", "Doe", "abc")
 
+    try:
+        error_element = driver.find_element(By.CSS_SELECTOR, "[data-test='error']")
+        assert error_element.is_displayed(), "Error message should be visible"
+        print(f"✓ Validation error caught: {error_element.text}")
+    except:
+        pytest.fail("Expected error message not found - form may have submitted incorrectly")
 
-    assert "checkout-step-one" in driver.current_url
-
-    
-    error_element = driver.find_element(By.CSS_NAME, "[data-test='error']")
-    assert error_element.is_displayed()
-
-
-    print(f"[Test] Validation Success! Error message caught: {error_element.text}")
+    assert "checkout-step-one" in driver.current_url, "Page should NOT advance with invalid data"
 
 
     driver.save_screenshot("day79-checkout-error.png")

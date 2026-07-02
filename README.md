@@ -989,3 +989,12 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 - **Status:** Completed 
 
+
+---
+
+### Day 79: Negative Testing & Validation Assertions (Fixed)
+* **Goal:** Refactor checkout automation suite to properly assert validation errors using correct CSS Selectors.
+* **Deliverables:**
+    - [Pytest Suite (Positive & Negative Scenario)](./api-testing/tests/day79.py)
+    - [Terminal Test Execution Screenshot](./api-testing/tests/day79-checkout-error.png)
+- **Status:** Completed 
