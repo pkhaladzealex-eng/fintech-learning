@@ -31,14 +31,24 @@ def navigate_to_checkout(driver):
 
 # 4.
 def fill_checkout_form(driver, first_name, last_name, postal_code):
-    wait = WebDriverWait(driver, 10)
-    first_name_field = wait.until(EC.element_to_be_clickable((By.ID, "first-name")))
-    first_name_field.send_keys(first_name)
 
+    print(f"[Utils] Filling form fields: First='{first_name}', Last='{last_name}', Code='{postal_code}'")
+
+    # first name
+    driver.find_element(By.ID, "first-name").clear()
+    driver.find_element(By.ID, "first-name").send_keys(first_name)
+
+    # last name
+    driver.find_element(By.ID, "last-name").clear()
     driver.find_element(By.ID, "last-name").send_keys(last_name)
+
+    # postal code
+    driver.find_element(By.ID, "postal-code").clear()
     driver.find_element(By.ID, "postal-code").send_keys(postal_code)
 
-    driver.find_element(By.ID, "continue").click()
+
+
+
 
 # 5.
 def complete_checkout(driver):
