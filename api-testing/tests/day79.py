@@ -10,7 +10,8 @@ from selenium_utils import (
     login_to_site,
     add_products_to_cart,
     navigate_to_checkout,
-    fill_checkout_form,
+    fill_checkout_fields,
+    submit_checkout_form,
     complete_checkout
 )
 
@@ -36,10 +37,10 @@ def test_complete_shopping_flow(driver):
     navigate_to_checkout(driver)
     assert "checkout-step-one" in driver.current_url
 
-    fill_checkout_form(driver, "John", "Doe", "12345")
+    fill_checkout_fields(driver, "John", "Doe", "12345")
+    submit_checkout_form(driver)
 
-    print("[Test] Clicking submit button from test...")
-    driver.find_element(By.ID, "continue").click()
+
     assert "checkout-step-two" in driver.current_url
 
     complete_checkout(driver)
@@ -60,13 +61,12 @@ def test_checkout_with_invalid_input(driver):
 
     # 1. Fill form fields - Leave first name empty manually
     print("[Test] Filling fields, leaving First Name empty...")
-    fill_checkout_form(driver, "", "Doe", "12345")
+    fill_checkout_fields(driver, "", "Doe", "12345")
+    submit_checkout_form(driver)
 
-    # 2. Click submit button
-    print("[Test] Clicking submit button ...")
-    driver.find_element(By.ID, "continue").click()
 
-    # 3. Then check for error
+
+    # 2. Then check for error
     try:
         error_element = driver.find_element(By.CSS_SELECTOR, "[data-test='error']")
         assert error_element.is_displayed(), "Error message should be visible"

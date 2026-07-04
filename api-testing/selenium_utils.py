@@ -30,27 +30,22 @@ def navigate_to_checkout(driver):
     checkout_btn.click()
 
 # 4.
-def fill_checkout_form(driver, first_name, last_name, postal_code):
-
-    print(f"[Utils] Filling form fields: First='{first_name}', Last='{last_name}', Code='{postal_code}'")
-
-    # first name
-    driver.find_element(By.ID, "first-name").clear()
-    driver.find_element(By.ID, "first-name").send_keys(first_name)
-
-    # last name
-    driver.find_element(By.ID, "last-name").clear()
-    driver.find_element(By.ID, "last-name").send_keys(last_name)
-
-    # postal code
-    driver.find_element(By.ID, "postal-code").clear()
-    driver.find_element(By.ID, "postal-code").send_keys(postal_code)
-
-
-
-
+def fill_checkout_fields(driver, first_name, last_name, postal_code):
+    wait = WebDriverWait(driver, 10)
+    wait.until(EC.presence_of_element_located((By.ID, "first-name"))).send_keys(first_name)
+    wait.until(EC.presence_of_element_located((By.ID, "last-name"))).send_keys(last_name)
+    wait.until(EC.presence_of_element_located((By.ID, "postal-code"))).send_keys(postal_code)
 
 # 5.
+def submit_checkout_form(driver):
+    wait = WebDriverWait(driver, 10)
+    wait.until(EC.element_to_be_clickable((By.ID, "continue"))).click()
+
+
+
+
+
+# 6.
 def complete_checkout(driver):
     wait = WebDriverWait(driver, 10)
     finish_btn = wait.until(EC.element_to_be_clickable((By.ID, "finish")))
