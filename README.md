@@ -997,5 +997,5 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Deliverables:**
     - [Pytest Suite (Positive & Negative Scenario)](./api-testing/tests/day79.py)
     - [Terminal Test Execution Screenshot](./api-testing/tests/day79-checkout-error.png)
-    - - [Terminal Test Execution Screenshot](./api-testing/tests/day79-checkout-error_terminal.png)
+    - [Terminal Test Execution Screenshot](./api-testing/tests/day79-checkout-error_terminal.png)
 - **Status:** Completed 
