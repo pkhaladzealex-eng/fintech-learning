@@ -20,10 +20,10 @@ def log_event(level, message):
     """Reusable function to pipeline clean logs both to file and console."""
     if level.upper() == "INFO":
         logging.info(message)
-        print(f"ℹ️ INFO: {message}")
+        print(f" INFO: {message}")
     elif level.upper() == "ERROR":
         logging.error(message)
-        print(f"❌ ERROR: {message}")
+        print(f" ERROR: {message}")
 
 def validate_charge(charge_id, amount, status):
     """Reusable automated assertion function for verifying transactional integrity."""
@@ -50,3 +50,5 @@ def fetch_charge_safe(charge_id):
     except Exception as e:
         log_event("ERROR", f"Unexpected structural runtime breakdown: {e}")
         return None
+
+
