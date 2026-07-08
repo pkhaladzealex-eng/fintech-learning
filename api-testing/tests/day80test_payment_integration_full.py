@@ -4,58 +4,45 @@ import stripe
 import os
 import sys
 
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
 import utils
 
-
-stripe.api_key = os.environ.get("STRIPE_API_KEY", config.STRIPE_API_KEY)  #
-
+stripe.api_key = os.environ.get("STRIPE_API_KEY", config.STRIPE_API_KEY)
 
 
 def create_real_stripe_test_charge():
-    print("\n[Stripe API] INITIATING LIVE TEST CHARGE CREATION...")
+    print("\n[Stripe API] Creating test charge...")
     try:
         charge = stripe.Charge.create(
             amount=2500,
             currency="usd",
             source="tok_visa",
-            description="Integration Test Charge - Option A Workflow"
+            description="Integration Test Charge - Option A"
         )
-        print(f"[Stripe API] Charge created successfully! Live Test ID: {charge.id}")
+        print(f"[Stripe API] Charge created: {charge.id}")
         return charge
     except stripe.error.StripeError as e:
-        pytest.fail(f"Stripe API Rejected Request: {e}")
+        pytest.fail(f"Stripe API failed: {e}")
 
 
 def insert_charge_into_database(charge_id, amount, status):
-
-    print(f"[Database] Inserting Charge {charge_id} into local ledger...")
-
-    conn = sqlite3.connect(config.DATABASE_PATH)  #
+    print(f"[Database] Inserting {charge_id}...")
+    conn = sqlite3.connect(config.DATABASE_PATH)
     cursor = conn.cursor()
-
-    try:
-        cursor.execute(
-            """
-            INSERT INTO charges 
-            VALUES (?, ?, ?, NULL, NULL, NULL)
-            """,
-            (charge_id, amount, status)
-        )
-        conn.commit()
-        print("[Database] Record committed successfully.")
-    except sqlite3.Error as e:
-        print(f"[Database] Insert Error: {e}")
-    finally:
-        conn.close()
+    cursor.execute(
+        "INSERT INTO charges VALUES (?, ?, ?, NULL, NULL, NULL)",
+        (charge_id, amount, status)
+    )
+    conn.commit()
+    conn.close()
+    print("[Database] Inserted successfully.")
 
 
 def query_payment_database(charge_id):
-    print(f"[Database Query] Fetching logs for Target ID: {charge_id}")
-    conn = sqlite3.connect(config.DATABASE_PATH)  #
+    print(f"[Database] Querying {charge_id}...")
+    conn = sqlite3.connect(config.DATABASE_PATH)
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM charges WHERE charge_id = ?", (charge_id,))
     record = cursor.fetchone()
@@ -63,27 +50,40 @@ def query_payment_database(charge_id):
     return record
 
 
+def cleanup_database(charge_id):
+    conn = sqlite3.connect(config.DATABASE_PATH)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM charges WHERE charge_id = ?", (charge_id,))
+    conn.commit()
+    conn.close()
+    print(f"[Cleanup] Deleted {charge_id} from database.")
+
+
 def test_payment_integration():
-    print("\n[Integration Test] Starting API Database pipeline verification...")
+    print("\n[Integration Test] Starting...")
 
-
+    # Step 1: Stripe
     stripe_charge = create_real_stripe_test_charge()
     new_charge_id = stripe_charge.id
 
+    # Step 2: Insert + verify insert worked
+    try:
+        insert_charge_into_database(new_charge_id, stripe_charge.amount, stripe_charge.status)
+    except Exception as e:
+        pytest.fail(f"Database insert failed: {e}")
 
-    insert_charge_into_database(new_charge_id, stripe_charge.amount, stripe_charge.status)
+    # Step 3: Stripe verify
+    fetched_charge = utils.fetch_charge_safe(new_charge_id)
+    assert fetched_charge is not None, "Charge not found on Stripe"
+    assert fetched_charge.status == "succeeded", "Charge status should be succeeded"
+    print("✓ [Step 1/2] Stripe verification passed.")
 
-
-    fetched_charge = utils.fetch_charge_safe(new_charge_id)  #
-    assert fetched_charge is not None, "Failed to verify newly created charge on Stripe backend"
-    assert fetched_charge.status == "succeeded", "Stripe test charge should be marked as succeeded"
-    print(f"✓ [Step 1/2 Passed] Dynamic Stripe verification completely valid.")
-
-
+    # Step 4: DB verify
     db_record = query_payment_database(new_charge_id)
-
-    assert db_record is not None, f"Data Flow Broken: Charge '{new_charge_id}' was not saved in DB!"
+    assert db_record is not None, f"Charge '{new_charge_id}' not found in DB"
     assert db_record[0] == new_charge_id, "Database record ID mismatch"
+    print(f"✓ [Step 2/2] Database verification passed: {db_record}")
 
-    print(f" [Step 2/2 Passed] Database Integrity verified. Found DB Log: {db_record}")
-    print("\n [PASSED] Option A Integration Test is fully green! Data flows properly without fake UI.")
+    # Step 5: Cleanup
+    cleanup_database(new_charge_id)
+    print("\n [PASSED] Integration test complete!")
