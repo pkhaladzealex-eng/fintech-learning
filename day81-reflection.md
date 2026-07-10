@@ -5,11 +5,14 @@ Days 62-79 introduced Selenium, and at first, I kept using `time.sleep(5)` whene
 
 ### 2. Looking Back at My Code
 In my earlier tasks, I used hardcoded sleep times. Later, I refactored it using `WebDriverWait` inside `selenium_utils.py`:
+
 ```python
 wait = WebDriverWait(driver, 10)
 username_field = wait.until(EC.presence_of_element_located((By.ID, "user-name")))
+```
 
-My Understanding
+
+3. My Understanding
 Why it works: time.sleep() just freezes the whole script blindly for fixed seconds, even if the element loads in 0.5 seconds. WebDriverWait is smart—it checks the browser every 500ms. As soon as the element appears, it continues immediately. If 10 seconds pass and it's still not there, it throws an error.
 
 When to use it: Always use WebDriverWait for dynamic web elements, page redirects, and form submissions. Never use time.sleep() in real automation testing.
