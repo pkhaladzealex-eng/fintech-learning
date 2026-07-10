@@ -1,11 +1,11 @@
-	# 💳 Stripe Payment Integration & Testing Project
+	#  Stripe Payment Integration & Testing Project
 
-## 🌟 Project Overview
+##  Project Overview
 This project demonstrates a comprehensive QA testing process within the **Stripe Sandbox** environment. I have simulated real-world customer creation and transaction scenarios to verify system robustness and error handling.
 
 ---
 
-## 📅 Day 1: Payment Testing Setup (Customers & Cards)
+##  Day 1: Payment Testing Setup (Customers & Cards)
 In the first phase, I focused on setting up the environment and creating test customers to cover various payment networks.
 
 ### Created Test Customers:
@@ -23,22 +23,22 @@ In the first phase, I focused on setting up the environment and creating test cu
 ---
 
 
-📅 Day 2: Transaction Outcome Testing
+ Day 2: Transaction Outcome Testing
 In this phase, I executed 5 manual transactions to test how the system handles different payment outcomes.
 
-1. Successful Payment ✅
+1. Successful Payment 
 ![Successful Payment](./payment-setup/Day-02/1-successful-payment.png)
 
-2. Declined Card ❌
+2. Declined Card 
 ![Declined Card](./payment-setup/Day-02/2-declined-card.png)
 
-3. Insufficient Funds 💸
+3. Insufficient Funds 
 ![Insufficient Funds](./payment-setup/Day-02/3-insufficient-funds.png)
 
-4. Expired Card 📅
+4. Expired Card 
 ![Expired Card](./payment-setup/Day-02/4-expired-card.png)
 
-5. Network / Processing Error ⚠️
+5. Network / Processing Error ⚠
 ![Network Error](./payment-setup/Day-02/5-network-error.png)
 
 
@@ -338,33 +338,33 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Test Report:** [Detailed Day 21 Execution Report](./payment-setup/Day_21_Test_Execution_Results/test-execution-day21.md)
 * **Evidence:** Stripe Transaction, Webhook Logs, and SQL Verification screenshots.
 * **Data Integrity:** Verified record creation in `fintech_qa.db`.
-### 📅 Day 22: API Testing & Database Verification
+###  Day 22: API Testing & Database Verification
 * **Goal:** Create Stripe payments via Python API and verify data integrity in SQLite.
 - **Key Deliverables:** [View Day 22 Folder & Report](./api-testing/Day_22_API_Testing/)
 - **Status:** Completed 
 
-### 📅 Day 23: API Retrieval
+###  Day 23: API Retrieval
 * **Goal:** Automate fetching charge details using an ID stored in a text file.
 - **Key Deliverables:** [View Day 23 Folder](./api-testing/Day_23_API_Retrieval/)
 - **Status:** Completed 
-### 📅 Day 24: Error Handling
+###  Day 24: Error Handling
 * **Goal:** Use try-except blocks to catch and verify Stripe API payment failures.
 - **Key Deliverables:** [View Day 24 Folder](./api-testing/Day_24_Error_Handling/)
 - **Status:** Completed 
-### 📅 Day 25: Data Extraction
+###  Day 25: Data Extraction
 * **Goal:** Extract and format specific fields from API response objects.
 - **Key Deliverables:** [View Day 25 Folder](./api-testing/Day_25_Data_Extraction/)
 - **Status:** Completed 
-### 📅 Day 26: Refund Logic
+###  Day 26: Refund Logic
 * **Goal:** Automate payment reversals and handle different Stripe object types.
 - **Key Deliverables:** [View Day 26 Folder](./api-testing/Day_26_Refunds/)
 - **Status:** Completed 
-### 📅 Day 27: SQL & Data Aggregation
+###  Day 27: SQL & Data Aggregation
 * **Goal:** Integrate Python with SQLite to manage and calculate payment data.
 - **Key Deliverables:** [View Day 27 Folder](./api-testing/Day_27_SQL_Integration/)
 - **Status:** Completed 
 
-### 📅 Day 28: Webhooks & Event Integration
+###  Day 28: Webhooks & Event Integration
 * **Goal:** Understand and configure Stripe Webhooks for real-time payment notifications.
 * **Key Achievements:**
     - Configured a Webhook endpoint in Stripe Dashboard for `charge.succeeded` and `charge.failed` events.
@@ -373,7 +373,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 * **Concepts Learned:** Push vs. Pull communication, Webhook Endpoints, Event Objects.
 * **Deliverables:** [View Day 28 Folder](./api-testing/Day_28_Webhooks/)
 - **Status:** Completed 
-### 📅 Day 29: Parsing Real Webhook Data
+###  Day 29: Parsing Real Webhook Data
 * **Goal:** Extract and process financial data from a live Stripe Webhook JSON payload.
 * **Key Achievements:**
     - Automated a $60.00 test charge using `stripe6.py` to trigger a real event.
@@ -385,7 +385,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 - **Status:** Completed 
 ---
 
-## 📅 Day 31: Advanced Charge Retrieval
+##  Day 31: Advanced Charge Retrieval
 * **Goal:** Use the Stripe API to fetch specific transaction details and extract them into a clean Python structure.
 * **Key Achievements:**
     - Successfully used `stripe.Charge.retrieve()` with a live Charge ID.
@@ -396,7 +396,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 32: SQL Automation & Data Aggregation
+##  Day 32: SQL Automation & Data Aggregation
 * **Goal:** Bridge the API data from Day 31 with a local SQLite database and perform automated calculations.
 * **Key Achievements:**
     - Developed a Python script to automate SQL `INSERT` and `SELECT` operations.
@@ -407,7 +407,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 33: Stripe API & SQL Analytics
+##  Day 33: Stripe API & SQL Analytics
 * **Goal:** Integrate live Stripe data with SQLite and calculate financial metrics.
 * **Key Achievements:**
     - Successfully synced live Stripe charges with the local database.
@@ -417,7 +417,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 34: Error Handling & DB Statistics
+##  Day 34: Error Handling & DB Statistics
 * **Goal:** Capture failed API calls and automate failure reporting in the database.
 * **Key Achievements:**
     - Automated the capture of Stripe CardErrors.
@@ -427,7 +427,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 35: Multi-table Integration (Refunds)
+##  Day 35: Multi-table Integration (Refunds)
 * **Goal:** Extend the system to track and aggregate refund data via Stripe API.
 * **Key Achievements:**
     - Designed and implemented the `refunds` database table.
@@ -437,7 +437,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 36: Webhook Payloads & JSON Data Extraction
+##  Day 36: Webhook Payloads & JSON Data Extraction
 * **Goal:** Practice real-time event simulation by parsing Stripe Webhook JSON data.
 * **Key Achievements:**
     - Analyzed the structure of Stripe's `charge.succeeded` event payload.
@@ -448,7 +448,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 37: Relational Data & Net Revenue Calculation
+##  Day 37: Relational Data & Net Revenue Calculation
 * **Goal:** Reconcile charges and refunds using SQL Joins and API data.
 * **Key Achievements:**
     - Implemented a relational database structure for charges and refunds.
@@ -458,7 +458,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 38: Advanced Joins & Net Revenue Auditing
+##  Day 38: Advanced Joins & Net Revenue Auditing
 * **Goal:** Use `LEFT JOIN` to identify charges without refunds and calculate total platform revenue.
 * **Key Achievements:**
     - Handled `NULL` values in SQL using `IFNULL` for accurate math.
@@ -468,7 +468,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 39: Secure API Integration
+##  Day 39: Secure API Integration
 * **Goal:** Implement secure API key handling and automate test charge creation.
 * **Key Achievements:**
     - Validated API connection via environment variables.
@@ -478,7 +478,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 40: Financial Data Analytics
+##  Day 40: Financial Data Analytics
 * **Goal:** Batch process transactions and generate a statistical financial report.
 * **Key Achievements:**
     - Automated fetching and storing of multiple Stripe charges.
@@ -488,7 +488,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 41: Multi-Card Analytics
+##  Day 41: Multi-Card Analytics
 * **Goal:** Test multiple card brands and implement data grouping.
 * **Key Achievements:**
     - Dynamically updated database schema to track card brands.
@@ -499,7 +499,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 42: Customer Data Management
+##  Day 42: Customer Data Management
 * **Goal:** Synchronize Stripe customer data with local SQLite storage.
 * **Key Achievements:**
     - Integrated Stripe Customer API for automated user creation.
@@ -510,7 +510,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 43: Relational Data Joining
+##  Day 43: Relational Data Joining
 * **Goal:** Create transactions linked to specific customers and query combined data.
 * **Key Achievements:**
     - Transitioned to Stripe's modern PaymentIntent workflow.
@@ -521,7 +521,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 44: Multi-Charge Aggregation
+##  Day 44: Multi-Charge Aggregation
 * **Goal:** Process multiple charges for one customer and compute cumulative financial metrics.
 * **Key Achievements:**
     - Handled sequential API requests with payment intents.
@@ -532,7 +532,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 45: Advanced Financial Reporting (Charges vs Refunds)
+##  Day 45: Advanced Financial Reporting (Charges vs Refunds)
 * **Goal:** Restructure the database schema to introduce Refunds and build a Python script for global net-revenue checking.
 * **Key Achievements:**
     - Rebuilt `charges` and `refunds` tables with explicit Primary Keys (`pk`) to ensure structural data integrity.
@@ -543,7 +543,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 46: Stripe Webhooks Architecture
+##  Day 46: Stripe Webhooks Architecture
 * **Goal:** Audit asynchronous Stripe Webhook event structures and develop a polymorphic Python JSON parsing core.
 * **Key Achievements:**
     - Inspected live production log streams inside the Stripe Developer Workbench to isolate event tracking configurations.
@@ -554,7 +554,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 47: Stripe Webhook Events & Matrix Mapping
+##  Day 47: Stripe Webhook Events & Matrix Mapping
 * **Goal:** Research core webhook event lifecycles and build a programmatic Python documentation array module.
 * **Key Achievements:**
     - Audited `charge.succeeded`, `charge.failed`, and `charge.refunded` behaviors for robust payment testing profiles.
@@ -565,7 +565,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 48: Advanced Webhook Ingestion & Validation
+##  Day 48: Advanced Webhook Ingestion & Validation
 * **Goal:** Capture authentic Stripe charge payloads and build a defensive Python JSON parsing script with schema validation.
 * **Key Achievements:**
     - Triggered and audited real asynchronous transaction logs directly from the Stripe Developer Workbench.
@@ -576,7 +576,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 49: Asynchronous Error Ingestion & Parsing
+##  Day 49: Asynchronous Error Ingestion & Parsing
 * **Goal:** Process credit card decline webhooks and write a Python parsing routine to extract diagnostic error arrays.
 * **Key Achievements:**
     - Triggered live asynchronous failure sequences using simulated card declination parameters (`tok_chargeDeclined`).
@@ -587,7 +587,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 51: Defensive Exception Handling & Fault Tolerance
+##  Day 51: Defensive Exception Handling & Fault Tolerance
 * **Goal:** Integrate structural error handling blocks into early charge processing logic to prevent runtime application breakdown.
 * **Key Achievements:**
     - Audited systemic vulnerability points inside integration networks to isolate communication failure vectors.
@@ -598,7 +598,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 52: Data Integrity Gateways & Ledger Validation
+##  Day 52: Data Integrity Gateways & Ledger Validation
 * **Goal:** Implement multi-layer logical assertions inside financial aggregation loops to handle missing values and faulty constraints.
 * **Key Achievements:**
     - Upgraded historical net revenue calculations with defensive data verification gates.
@@ -609,7 +609,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 53: Application Logging & Audit Trails
+##  Day 53: Application Logging & Audit Trails
 * **Goal:** Implement persistent logging configurations inside webhook decoders to track extraction workflows and capture errors.
 * **Key Achievements:**
     - Integrated Python's standard `logging` library to handle runtime application debugging streams.
@@ -620,7 +620,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 54: System Decoupling & Configuration Architecture
+##  Day 54: System Decoupling & Configuration Architecture
 * **Goal:** Abstract static parameters out of processing scripts into a standalone configuration registry.
 * **Key Achievements:**
     - Designed a central environment module (`config.py`) to manage API keys, database paths, and platform variables.
@@ -631,7 +631,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 55: Behavioral Assertions & Automated Testing
+##  Day 55: Behavioral Assertions & Automated Testing
 * **Goal:** Integrate structural assertion statements within transaction models to test data constraints and handle failure messages.
 * **Key Achievements:**
     - Combined processing logic and error blocks into a robust validation testing utility (`day55.py`).
@@ -642,7 +642,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 56: Professional Architectural Reorganization
+##  Day 56: Professional Architectural Reorganization
 * **Goal:** Reorganize the entire `api-testing` environment into a professional, decoupled production layout.
 * **Key Achievements:**
     - Established centralized standard directories (`scripts/` and `logs/`) inside the testing ecosystem to decouple code from telemetry.
@@ -653,7 +653,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 57: Database Transactions & Rollback Mechanics
+##  Day 57: Database Transactions & Rollback Mechanics
 * **Goal:** Implement ACID-compliant transactional boundaries to ensure database integrity during partial runtime failures.
 * **Key Achievements:**
     - Integrated explicit transaction blocks (`BEGIN TRANSACTION`, `COMMIT`, `ROLLBACK`) using Python's `sqlite3` API.
@@ -666,7 +666,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 58: Rate Limiting & Throttling Architecture
+##  Day 58: Rate Limiting & Throttling Architecture
 * **Goal:** Implement programmatic rate limiting mechanisms to insulate live financial providers from API exhaustion or credential-stuffing triggers.
 * **Key Achievements:**
     - Developed an active request-throttling loop leveraging Python's `time.sleep` intervals to pace sequential integration calls.
@@ -679,7 +679,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 59: Telemetry Masking & Data Privacy Architecture
+##  Day 59: Telemetry Masking & Data Privacy Architecture
 * **Goal:** Secure asynchronous logging pipelines against exposure of Personally Identifiable Information (PII) and credentials.
 * **Key Achievements:**
     - Implemented secure one-way cryptographic hashing using `hashlib.sha256` to anonymize live identifier tokens before storage.
@@ -697,7 +697,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
-## 📅 Day 60: Grand Finale — Portfolio Audit & Graduation
+##  Day 60: Grand Finale — Portfolio Audit & Graduation
 
 * **Goal:** Conduct a comprehensive codebase audit of the entire 60-day curriculum and compile enterprise-grade technical documentation.
 
@@ -720,7 +720,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 61: Introduction to Web Automation & Selenium Core
+##  Day 61: Introduction to Web Automation & Selenium Core
 * **Goal:** Research the architectural foundations of browser automation, cross-browser verification matrix, and Selenium WebDriver components.
 * **Key Achievements:**
     - Analyzed the paradigm shift from backend API evaluation to User Interface (UI) and Document Object Model (DOM) layer automated tracking.
@@ -732,7 +732,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 62: First Browser Automation Script & WebDriver Lifecycle
+##  Day 62: First Browser Automation Script & WebDriver Lifecycle
 * **Goal:** Install Selenium WebDriver, configure environment pipelines, and launch an automated browser session.
 * **Key Achievements:**
     - Initialized automated Chrome instance using Selenium 4's native manager without hardcoding binary driver paths.
@@ -745,7 +745,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 63: UI Automation Screenshots & Wait Operations
+##  Day 63: UI Automation Screenshots & Wait Operations
 * **Goal:** Practice programmatic UI interaction, window rendering synchronization, and automated visual capture states.
 * **Key Achievements:**
     - Orchestrated explicit timing pauses (`time.sleep`) allowing complex authentication forms to cleanly render within the DOM grid.
@@ -759,7 +759,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 64: DOM Locators & E-Commerce Checkout Form Inspection
+##  Day 64: DOM Locators & E-Commerce Checkout Form Inspection
 * **Goal:** Practice element identification strategies using explicit DOM attributes (`By.ID`, `By.NAME`) inside checkout pipelines.
 * **Key Achievements:**
     - Evaluated structure mapping mechanisms for form fields within sandbox e-commerce test interfaces.
@@ -774,7 +774,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-## 📅 Day 65: Programmatic Form Interaction & Data Injection
+##  Day 65: Programmatic Form Interaction & Data Injection
 * **Goal:** Master input injection methodologies using Selenium's `send_keys` framework to drive transaction and checkout data forms.
 * **Key Achievements:**
     - Established pre-requisite authentication tokens dynamically before executing target form manipulation.
@@ -787,7 +787,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 - **Status:** Completed 
 
 
-### 📅 Day 66: UI Test Automation – End-to-End Checkout Flow
+###  Day 66: UI Test Automation – End-to-End Checkout Flow
 * **Goal:** Automate the complete e-commerce checkout pipeline including authentication, form handling, and final submission using Swag Labs sandbox.
 * **Key Achievements:**
     - Orchestrated end-to-end programmatic user flow utilizing dynamic action methods (`click()`, `send_keys`).
@@ -799,7 +799,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
     - [Terminal Execution Trace](./api-testing/scripts/terminal_day66.png)
 - **Status:** Completed 
 
----## 📅 Day 67: Smart Waits & Synchronization (WebDriverWait)
+---##  Day 67: Smart Waits & Synchronization (WebDriverWait)
 
 * **Goal:** Implement dynamic synchronization mechanisms (`WebDriverWait` and `ExpectedConditions`) to replace brittle static pauses (`time.sleep`).
 
@@ -825,7 +825,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
-### 📅 Day 68: Error Handling & Verification (WebDriverWait)
+###  Day 68: Error Handling & Verification (WebDriverWait)
 
 * **Goal:** Use `try/except` and `WebDriverWait` to verify if the payment page loaded successfully or failed.
 
@@ -848,7 +848,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-### 📅 Day 69: Code Refactoring & Helper Functions (DRY)
+###  Day 69: Code Refactoring & Helper Functions (DRY)
 * **Goal:** Create a reusable utils file to avoid repeating Selenium code.
 * **Deliverables:**
     - [Selenium Utilities File](./api-testing/selenium_utils.py)
@@ -869,7 +869,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
-### 📅 Day 70: Introduction to Pytest
+###  Day 70: Introduction to Pytest
 
 * **Goal:** Install Pytest and write automated test cases to run multiple tests together.
 
@@ -887,7 +887,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-### 📅 Day 71: Pytest Fixtures (Setup & Cleanup)
+###  Day 71: Pytest Fixtures (Setup & Cleanup)
 * **Goal:** Use pytest fixtures to handle browser setup and cleanup automatically for each test.
 * **Deliverables:**
     - [Advanced Pytest Script](./api-testing/tests/test_payment_success.py)
@@ -896,7 +896,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-### 📅 Day 72: Full Integration Testing (UI -> API -> DB)
+###  Day 72: Full Integration Testing (UI -> API -> DB)
 * **Goal:** Combine Selenium, simulated Stripe API, and SQLite database checks into one single test flow.
 * **Deliverables:**
     - [Integration Test Script](./api-testing/tests/test_payment_integration.py)
@@ -909,7 +909,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 
 
-### 📅 Day 73: Testing Error Scenarios
+###  Day 73: Testing Error Scenarios
 
 * **Goal:** Write automated tests to check how the system handles declined cards, missing data, and timeouts.
 
@@ -931,7 +931,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-### 📅 Day 74: Test Suite Organization (conftest.py)
+###  Day 74: Test Suite Organization (conftest.py)
 * **Goal:** Use `conftest.py` to share a single browser session across multiple test files and run them all together.
 * **Deliverables:**
     - [Global Fixtures Configuration](./api-testing/tests/conftest.py)
@@ -1021,10 +1021,6 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ---
 
-### 📅 Day 81: Personal reflection on explicit waits versus hardcoded sleep times.
-- [Day 81 Reflection Document](./day81-reflection.md) ✅
+###  Day 81: Personal reflection on explicit waits versus hardcoded sleep times.
+- [Day 81 Reflection Document](./day81-reflection.md) 
 
----
-
-### 📅 Day 81: Personal reflection on explicit waits versus hardcoded sleep times.
-- [Day 81 Reflection Document](./day81-reflection.md) ✅
