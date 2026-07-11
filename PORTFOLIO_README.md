@@ -24,15 +24,18 @@ This repository contains automated tests for a fintech payment platform. It test
 2. Set up your environment variable for Stripe:
    ```bash
    export STRIPE_API_KEY="your_test_key_here"
+   ```
 Install dependencies:
 
-Bash
+```bash
 pip install selenium pytest stripe
+```
 Run all tests:
 
-Bash
+```bash
 python3 -m pytest api-testing/tests/ -v -s
-6. Key Features
+```
+### 6. Key Features
 End-to-End Pipeline: Combines browser interaction, external API integration, and database queries in one single test script.
 
 Page Object Design: Uses dedicated helper utilities to log into websites and navigate forms dynamically.
@@ -41,7 +44,7 @@ Negative Assertions: Includes test cases that purposefully enter invalid inputs 
 
 Strict Logs: Records every info and error milestone cleanly to terminal windows and internal log archives.
 
-7. What I Learned
+### 7. What I Learned
 Explicit Waits: I learned that using WebDriverWait is much better than freezing tests with time.sleep(), because it makes automation dynamic and stable.
 
 Integration Logic: I discovered how to fetch transactional metadata from Stripe backend logs to cross-reference payment states with local storage.
