@@ -24,10 +24,14 @@ This repository contains automated tests for a fintech payment platform. It test
 2. Set up your environment variable for Stripe:
    ```bash
    export STRIPE_API_KEY="your_test_key_here"
-Open your terminal and run all the automated tests using the following command:
+Install dependencies:
 
 Bash
-python3 -m pytest -v -s
+pip install selenium pytest stripe
+Run all tests:
+
+Bash
+python3 -m pytest api-testing/tests/ -v -s
 6. Key Features
 End-to-End Pipeline: Combines browser interaction, external API integration, and database queries in one single test script.
 
