@@ -1036,3 +1036,7 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ###  Day 84: Created a comprehensive lessons learned technical document.
 - [Lessons Learned Guide](./LESSONS_LEARNED.md) 
+- ---
+
+###  Day 85: Code Review, Refactoring, and Portability Notes.
+- [Refactoring and Comments Report](./REFACTORING_NOTES.md) 
