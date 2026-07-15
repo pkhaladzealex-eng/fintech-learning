@@ -1040,3 +1040,8 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ###  Day 85: Code Review, Refactoring, and Portability Notes.
 - [Refactoring and Comments Report](./REFACTORING_NOTES.md) 
+
+---
+
+###  Day 86: Created professional deployment and setup guide.
+- [Deployment Guide](./DEPLOYMENT_GUIDE.md) 
