@@ -1056,3 +1056,8 @@ Successfully executed a manual payment test using Stripe Test Mode, verified the
 
 ###  Day 88: Created a professional GitHub profile summary documenting career transition and uTest experience.
 - [GitHub Profile Summary](./GITHUB_PROFILE_README.md) 
+
+---
+
+###  Day 89: Created a full mock interview dialogue for job preparation.
+- [Mock Interview Guide](./INTERVIEW_MOCK.md) 

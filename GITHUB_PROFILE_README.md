@@ -9,7 +9,7 @@
 - **Practical Experience:** Actively testing real-world applications on **uTest** since January 2026,  climbing up to a **Bronze Rated**  status.
 - **Specialization:** Focusing on payment system integrity, end-to-end integration, and database validation.
 - **Daily Discipline:** Building a rock-solid engineering portfolio through 88+ days of non-stop, consistent learning.
-
+- **Daily Workflow:** Using the macOS Terminal dynamically on a daily basis for environment setup, file structures, and automated script execution.
 ---
 
 ### 🛠️ Skills & Technologies
@@ -19,6 +19,7 @@
 * **APIs & Payments:** Stripe API Integration & Safe Token Handling
 * **Databases:** SQLite3 (Parameterized Queries & Transaction Logs)
 * **Methodologies:** Exploratory Testing, Bug Reporting, Crowdsourced Platform Testing (uTest)
+* **Version Control & CLI:** Git & GitHub (Daily branch management, commits, and remote syncing) alongside strong command-line navigation via macOS Terminal.
 
 ---
 
